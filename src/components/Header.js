@@ -6,12 +6,11 @@ export default function Header() {
     return (
         <header className="flex justify-between items-center p-2 border">
             <Image 
-                src='/logo.png'
+                src='/logo.svg'
                 width={100}
                 height={100}
                 alt="Timbol Logo"
             />
-               
             <Navbar />
         </header>
     )
