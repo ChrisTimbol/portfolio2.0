@@ -7,7 +7,7 @@ export default function Work() {
         
             <div className="w-full h-full"> {/* Page Content */}
 
-                <ul className=""> {/* List of projects */}
+                <ul className="space-y-4"> {/* List of projects */}
                     <li><Project /></li>
                     <li><Project /></li>
                     <li><Project /></li>
