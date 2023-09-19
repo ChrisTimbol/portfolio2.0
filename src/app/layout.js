@@ -1,5 +1,5 @@
 import './globals.css'
-
+import Header from '@/components/Header'
 /* 
 Root Layout (required)
  -Applies to all routes
@@ -13,7 +13,10 @@ Root Layout (required)
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="m-2">{children}</body>
+      <body className="m-2">
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }

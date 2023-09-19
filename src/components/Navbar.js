@@ -31,7 +31,6 @@ export default function Navbar() {
                             <li><Link href="/work">Work</Link></li>
                             <li><Link href="/about">About</Link></li>
                         </ul>
-
                     </div>
                 </> : <>
                     <div className={`bg-black block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm 
