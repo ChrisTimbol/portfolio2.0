@@ -1,5 +1,6 @@
 import './globals.css'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 /* 
 Root Layout (required)
  -Applies to all routes
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className="m-2">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

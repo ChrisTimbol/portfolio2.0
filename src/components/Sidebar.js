@@ -1,18 +1,17 @@
 import React from 'react';
 
 import Link from 'next/link';
-export default function Sidebar() {
+export default function Sidebar(props) {
     return (
         <section className="sidebar w-full">
 
             <section className="">
                 <h2 className="text-4xl">Best Categories</h2>
-                <ul className="flex space-x-4 "> {/* Query Loop of diff categories */}
-                    <li><Link className="" href="">React</Link></li>
-                    <li><Link className="" href="">Nextjs</Link></li>
-                    <li><Link className="" href="">wordpress</Link></li>
-                    <li><Link className="" href="">tailwind</Link></li>
-                    <li><Link className="" href="">reads</Link></li>
+                <ul className="flex space-x-4 flex-wrap "> {/* Query Loop of diff categories */}
+                    {props.categories.map((category) => (
+                        <li><Link className="" href="">{category.name}</Link></li>
+                    ))}
+
                 </ul>
             </section>
 
