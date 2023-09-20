@@ -15,17 +15,7 @@ export default function Sidebar(props) {
                 </ul>
             </section>
 
-            <section className="">
-                <h2>Other Related Post</h2>
-                <ul className=""> {/* Other Links to post from query loop */}
-                    <li>Wordpress Tloremyes thisfridgeratore</li>
-                    <li>lorem Title yes tdoorway answer</li>
-                    <li>loremloremle y one</li>
-                    <li>Wordpress Title yes this one</li>
-                    <li> Title yes this lorem one</li>
-                    <li>lorem Title loremlorem this one</li>
-                </ul>
-            </section>
+
         </section>
     )
 }
