@@ -9,7 +9,7 @@ export default function Sidebar(props) {
                 <h2 className="text-4xl">Best Categories</h2>
                 <ul className="flex space-x-4 flex-wrap "> {/* Query Loop of diff categories */}
                     {props.categories.map((category) => (
-                        <li><Link className="" href="">{category.name}</Link></li>
+                        <li key={category.id}><Link className="" href="">{category.name}</Link></li>
                     ))}
 
                 </ul>

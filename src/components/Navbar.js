@@ -1,7 +1,8 @@
-"use client"; /* Transfer over to  new navmenu omponent later */
+'use client'
 import Hamburger from '@/components/Hamburger'
 import React, { useState } from 'react';
 import Link from 'next/link';
+
 export default function Navbar() {
     const [menu, setMenu] = useState(false)
 
@@ -9,21 +10,29 @@ export default function Navbar() {
         setMenu(!menu)
     }
 
+    const closeMenu = () => {
+        setMenu(false); // Close the menu when a link is clicked
+    }
+
     return (
-        <nav className="">
-            <div className="relative z-10" onClick={toggleMenu} >
+        <>
+            <div className="relative z-20" onClick={toggleMenu} >
                 <Hamburger />
             </div>
             {menu && (
-                <div className='fixed inset-0  backdrop-blur	 overflow-hidden   bg-opacity-70 bg-gray-700'>
-                    <ul className={`absolute left-0 bottom-0 p-2 h-5/6  w-full justify-center flex flex-col justify-around `}>
-                        <li className='text-5xl'><Link href="/">Home</Link></li>
-                        <li className='text-5xl'><Link href="/blog">Blog</Link></li>
-                        <li className='text-5xl '><Link href="/work">Work</Link></li>
-                        <li className='text-5xl '><Link href="/about">About</Link></li>
-                    </ul>
+                <div className='fixed bottom-0 left-0 w-full h-full z-10 bg-opacity-80 backdrop-blur bg-gray-600 backdrop-blur text-emerald-500'>
+                    <nav className="flex flex-col justify-between h-full">
+                        <ul className='p-4 flex flex-col items-start justify-around h-full'>
+
+                            <li className='text-5xl'><Link onClick={closeMenu} href="/">Home</Link></li>
+                            <li className='text-5xl'><Link onClick={closeMenu} href="/blog">Blog</Link></li>
+                            <li className='text-5xl'><Link onClick={closeMenu} href="/work">Work</Link></li>
+                            <li className='text-5xl'><Link onClick={closeMenu} href="/about">About</Link></li>
+
+                        </ul>
+                    </nav>
                 </div>
             )}
-        </nav >
+        </>
     )
 }
