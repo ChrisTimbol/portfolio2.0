@@ -33,7 +33,7 @@ export default async function Home() {
               <Post
                 key={post?.id}
                 title={post?.title?.rendered}
-                thumbnail={post?._embedded?.['wp:featuredmedia']?.[0]?.source_url || ""} 
+                thumbnail={post?._embedded?.['wp:featuredmedia']?.[0]?.source_url} 
                 excerpt={post?.excerpt?.rendered}
               />
             ))}
