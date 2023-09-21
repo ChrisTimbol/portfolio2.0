@@ -1,20 +1,12 @@
 import Sidebar from '@/components/Sidebar'
 import Post from '@/components/Post'
-
-export async function fetchData(url) {
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error('Failed to fetch data')
-  }
-
-  return response.json()
-}
+import fetchData from '@/components/Api';
 
 export default async function Home() {
   const posts = await fetchData('http://portfoliosite.local/wp-json/wp/v2/posts?_embed', { cache: 'no-store' })
   const categories = await fetchData('http://portfoliosite.local/wp-json/wp/v2/categories')
   return (
-    <div className="">
+    <>
       {/*       <div className="absolute inset-0 z-0 grayscale-[100%]">
         <Image
           src="/baseTree.png"
@@ -25,7 +17,9 @@ export default async function Home() {
       </div> */}
 
       <main className="flex flex-col items-center relative"> {/* Use grid */}
-        <section className="spacer pt-32"></section>
+
+        <section className="Just-a-spacer-section pt-32"></section>
+
         <section className="space-y-8 w-full"> {/* MainContentBlogSection */}
           <h1 className="text-5xl">Latest Post</h1>
           <ul className="space-y-12">
@@ -33,17 +27,18 @@ export default async function Home() {
               <Post
                 key={post?.id}
                 title={post?.title?.rendered}
-                thumbnail={post?._embedded?.['wp:featuredmedia']?.[0]?.source_url} 
+                thumbnail={post?._embedded?.['wp:featuredmedia']?.[0]?.source_url}
                 excerpt={post?.excerpt?.rendered}
               />
             ))}
           </ul>
+
         </section>
 
         <Sidebar categories={categories} />
       </main>
 
-      <div className=""></div> {/* newsletter signup*/}
-    </div>
+      <div className=""></div>
+    </>
   )
 }
