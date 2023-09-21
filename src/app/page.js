@@ -16,7 +16,7 @@ export default async function Home() {
         />
       </div> */}
 
-      <main className="flex flex-col items-center relative"> {/* Use grid */}
+      <main className="min-h-screen flex flex-col items-center relative"> {/* Use grid */}
 
         <section className="Just-a-spacer-section pt-32"></section>
 

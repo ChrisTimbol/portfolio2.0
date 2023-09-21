@@ -23,7 +23,7 @@ export default async function Page({ params }) {
   const posts = await fetchData('http://portfoliosite.local/wp-json/wp/v2/pages')
   return (
     <>
-      <ul className="w-full">
+      <ul className="w-full min-h-screen">
         {posts.map((post) => (
           <li key={post?.id}>
             <h1>{post?.title?.rendered}</h1>
