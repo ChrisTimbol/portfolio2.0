@@ -3,8 +3,8 @@ import Post from '@/components/Post'
 import fetchData from '@/components/Api';
 
 export default async function Home() {
-  const posts = await fetchData('http://portfoliosite.local/wp-json/wp/v2/posts?_embed', { cache: 'no-store' })
-  const categories = await fetchData('http://portfoliosite.local/wp-json/wp/v2/categories')
+  const posts = await fetchData('http://portfoliosite.local/wp-json/wp/v2/posts?_embed', { next: { revalidate: false | 0 | 10 }})
+  const categories = await fetchData('http://portfoliosite.local/wp-json/wp/v2/categories', { next: { revalidate: false | 0 | 10 }})
   return (
     <>
       {/*       <div className="absolute inset-0 z-0 grayscale-[100%]">
