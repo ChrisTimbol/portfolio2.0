@@ -3,7 +3,7 @@ import Hamburger from '@/components/Hamburger'
 import React, { useState } from 'react';
 import Link from 'next/link';
 
-export default function Navbar() {
+export default function Navbar(props) {
     const [menu, setMenu] = useState(false)
 
     const toggleMenu = () => {
@@ -26,7 +26,6 @@ export default function Navbar() {
                             <li className='text-5xl'><Link onClick={closeMenu} href="/">Home</Link></li>
                             <li className='text-5xl'><Link onClick={closeMenu} href="/blog">Blog</Link></li>
                             <li className='text-5xl'><Link onClick={closeMenu} href="/work">Work</Link></li>
-                            <li className='text-5xl'><Link onClick={closeMenu} href="/about">About</Link></li>
                         </ul>
                     </nav>
                 </div>

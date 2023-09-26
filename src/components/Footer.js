@@ -18,7 +18,6 @@ export default function Footer() {
                     </div>
                     <div>
                         <h2 className="text-xl font-semibold">Contact Us</h2>
-
                     </div>
                 </nav>
             </div>
