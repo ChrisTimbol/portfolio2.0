@@ -18,7 +18,7 @@ export default function Hamburger(props) {
 
     return (
         <>
-            <button onClick={toggleOpen}>
+            <button className="py-4 "  onClick={toggleOpen}>
                 {isOpen ? (
                     <>
                         <div

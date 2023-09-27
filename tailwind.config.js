@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/public/peaks.svg')",
+      },
       screens: {
         'phone': {'max': '599px'}, // Width < 600
         'medium': {'min': '600px', 'max': '839px'}, // 600 < width < 840
@@ -21,6 +25,7 @@ module.exports = {
         sans: ['var(--font-inter)'],
         mono: ['var(--font-roboto-mono)'],
       },
+      
     },
   },
   plugins: [],
