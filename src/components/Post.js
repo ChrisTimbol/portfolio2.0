@@ -22,33 +22,35 @@ export default function Post(props) {
   };
 
 
-    // Format the date
-    const formattedDate = formatDate(props.date);
+  // Format the date
+  const formattedDate = formatDate(props.date);
   // Limit the excerpt to 20 words
   const truncatedExcerpt = truncateExcerpt(props.excerpt, 12);
 
 
 
   return (
-<article className="border border-neutral-300 shadow-md bg-white cursor-pointer p-2 rounded-lg transition-transform hover:scale-105">   
-<Link href={props.slug} className="text-blue-500 hover:text-blue-500 space-y-2">
+    <article className="border border-teal-800  shadow-md bg-white cursor-pointer p-2 rounded-lg transition-transform hover:scale-105">
+      <Link href={props.slug} className=" hover:text-blue-500  flex ">
 
-      <div className="w-full h-64 relative rounded-lg overflow-hidden border border-gray-300">
-        {props.thumbnail && ( /* Generate image only if it exist in API */
-          <Image
-            src={props.thumbnail}
-            title={props.title}
-            alt="Image for Post"
-            fill 
-            priority
-          />
-        )}
-      </div>
+        <div className="w-5/6 h-32 relative rounded-lg  border border-teal-600 ">
+          {props.thumbnail && ( /* Generate image only if it exist in API */
+            <Image
+              src={props.thumbnail}
+              title={props.title}
+              alt="Image for Post"
+              fill
+              priority
+            />
+          )}
+        </div>
+        <div className="mx-1">
+          <h3 className="text-xl font-bold">{props.title}</h3>
+          <span className="text-sm">{formattedDate}</span>
 
-      <h3 className="text-2xl font-semibold text-gray-900">{props.title}</h3>
+          <div className="text-sm text-gray-900" dangerouslySetInnerHTML={{ __html: truncatedExcerpt }} />
 
-      <div className="text-sm text-gray-600" dangerouslySetInnerHTML={{ __html: truncatedExcerpt }} />
-      <div className="">{formattedDate}</div>
+        </div>
       </Link>
     </article>
   )
