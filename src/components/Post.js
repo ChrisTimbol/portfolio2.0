@@ -49,16 +49,17 @@ export default function Post(props) {
             </div>
           )}
 
-          <div className=" p-2 w-full ">
-            <h3 className="text-xl font-bold tracking-wide leading-6  font-robotoSerif">{props.title}</h3>
+          <div className=" p-2   w-11/12 ">
+            <h3 className="text-xl font-bold tracking-wider leading-6  font-robotoSerif">{props.title}</h3>
             <span className="text-sm ">{formattedDate}</span>
             <span className="text-sm">{props.category}</span>
 
-            <div className="text-sm text-gray-900 tracking-wider leading-8 overflow-hidden w-full" dangerouslySetInnerHTML={{ __html: truncatedExcerpt }} />
+            <div className="text-sm text-gray-900 tracking-wide leading-8 overflow-hidden w-full " dangerouslySetInnerHTML={{ __html: truncatedExcerpt }} />
 
           </div>
 
         </Link>
+
       </article>
    
     </>
