@@ -3,63 +3,46 @@ import Post from '@/components/Post'
 import fetchData from '@/components/Api';
 import Image from 'next/image'
 import Link from 'next/link'
+import Intro from '@/components/Intro'
 export default async function Home() {
-  const posts = await fetchData('http://portfoliosite.local/wp-json/wp/v2/posts?_embed', { next: { revalidate: false | 0 | 10 } })
+
+  function getTimestamp() {
+    return new Date().getTime();
+  }
+  
+  const timestamp = getTimestamp();
+  const posts = await fetchData(`http://portfoliosite.local/wp-json/wp/v2/posts?_embed&timestamp=${timestamp}`, { next: { revalidate: false | 0 | 10 } })
   const categories = await fetchData('http://portfoliosite.local/wp-json/wp/v2/categories', { next: { revalidate: false | 0 | 10 } })
   return (
     <>
-
-
-
-
       <main className="relative min-h-screen flex flex-col items-center justify-center">
+        <div className="Hero Section w-full space-y-12 z-20">
 
-
-        <div className="Hero Section w-full space-y-12">
-
-
-
-          <div className="">
-
-
-            <div className="NameContainer text-center ">
-              <div className="text-2xl font-extrabold text-teal-500">Chris Timbol</div>
-              <div className="text-xl  ">Web Developer &</div>
-              <div className="text-xl  ">Design Enthusiast</div>
-              <Image src="/example.png" width={400} height={400} />
-              {/*               <Image src="myself.svg" width={500} height={100} className='' />
- */}
-            </div>
-
-
-
-
-
-          </div>
-
-          <div className="border border-neutral-300 shadow-md bg-white cursor-pointer p-2 rounded-lg transition-transform hover:scale-105">
+          <Intro />
+          <div className=" p-2 ">
 
             <h2 className="text-xl font-semibold text-teal-500">About Me</h2>
-            <div className="p-2 space-y-2">
-              <p>
-                Chris Timbol is from a small town called Eureka in California. Now resides in Sunny San Diego California.
-              </p>
-              <p>
-                a dedicated web developer with a strong focus on front-end development and design.
-              </p>
-              <p>
+            <ul className="space-y-4 w-11/12">
+              <li className="hover:gray-400">
+                Chris Timbol resides in Sunny San Diego California.
+              </li>
+              <li>
+                a dedicated web developer with a strong focus on front-end development and web design.
+              </li>
+              <li>
                 Specializes in React and Tailwind for rapid and optimal development.
-              </p>
-              <p>
+              </li>
+              <li>
                 Master in crafting custom WordPress themes and plugins.
-              </p>
-              <p>
+              </li>
+              <li>
                 pixel-perfect designs
-              </p>
-              <p>
-                user-friendly interfaces for an exceptional user experience
-              </p>
-            </div>
+              </li>
+              <li>
+                user-friendly interfaces for a promising user experience
+              </li>
+              </ul>
+            
           </div>
         </div>
 
@@ -71,8 +54,8 @@ export default async function Home() {
         <section className=" w-full  " >
           <div className="spacer my-32"></div>
           <h2 className="text-4xl p-2  ">Latest Post</h2>
-          <ul className="space-y-12 ">
-            
+          <ul className=" ">
+
             {posts.map((post) => (
               <li key={post?.id}>
                 <Post
@@ -85,7 +68,7 @@ export default async function Home() {
               </li>
             ))}
           </ul>
-              <Link className="hover:bg-teal-500 cursor-pointer p-4" href="/blog">{"See More->"}</Link>
+          <Link className="hover:bg-teal-500 cursor-pointer p-4" href="/blog">{"See More->"}</Link>
         </section>
         <div className="spacer my-32 "></div>
         <Sidebar categories={categories} />
