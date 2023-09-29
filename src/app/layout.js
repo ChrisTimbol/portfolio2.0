@@ -1,42 +1,37 @@
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-/* 
-Root Layout (required)
- -Applies to all routes
- - This layout enables you to modify the initial HTML returned from the server.
- - App directory must include it
- - must define <html> and <body> since nextjs doesn't automatically create them.  
- - use the built in SEO suppor to manage <head> html elements ex: <title>
- - Only the root layout can contain <html> and <body> tags.
-*/
-import { Inter, Roboto_Serif } from 'next/font/google'
-
-const inter = Inter({
+import { Roboto, Roboto_Serif, Roboto_Mono } from 'next/font/google'
+ 
+const roboto = Roboto({
+  weight: '400',
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter',
+  variable: '--font-roboto',
 })
- 
-const roboto_mono = Roboto_Serif({
+
+const roboto_Serif = Roboto_Serif({
+  weight: '400',
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-roboto-serif',
 })
 
-
-
+const roboto_Mono = Roboto_Mono({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto-Mono',
+})
 
 export default function RootLayout({ children }) {
   return (
-
-    <html lang="en"  className={`${inter.variable} ${roboto_mono.variable}`}>
-      <body className="font-roboto-serif">
+    <html lang="en"  className={`${roboto.variable} ${roboto_Serif.variable} ${roboto_Mono.variable}`}>
+      <body className="font-roboto">
         <Header />
         {children}
         <Footer />
       </body>
-      
     </html>
   )
 }

@@ -25,33 +25,42 @@ export default function Post(props) {
   // Format the date
   const formattedDate = formatDate(props.date);
   // Limit the excerpt to 20 words
-  const truncatedExcerpt = truncateExcerpt(props.excerpt, 12);
+  const truncatedExcerpt = truncateExcerpt(props.excerpt, 10);
 
 
 
   return (
-    <article className="border border-teal-800  shadow-md bg-white cursor-pointer p-2 rounded-lg transition-transform hover:scale-105">
-      <Link href={props.slug} className=" hover:text-blue-500  flex ">
+    <>
+      <article className="cursor-pointer ">
+        
+        <Link href={props.slug} className=" hover:text-green-500  flex items-start">
 
-        <div className="w-5/6 h-32 relative rounded-lg  border border-teal-600 ">
+
           {props.thumbnail && ( /* Generate image only if it exist in API */
-            <Image
-              src={props.thumbnail}
-              title={props.title}
-              alt="Image for Post"
-              fill
-              priority
-            />
+            <div className="w-1/3 h-20 relative m-2 p-2  ">
+              <Image
+                src={props.thumbnail}
+                title={props.title}
+                alt="Image for Post"
+                fill
+                priority
+                className="rounded-xl h-full"
+              />
+            </div>
           )}
-        </div>
-        <div className="mx-1">
-          <h3 className="text-xl font-bold">{props.title}</h3>
-          <span className="text-sm">{formattedDate}</span>
 
-          <div className="text-sm text-gray-900" dangerouslySetInnerHTML={{ __html: truncatedExcerpt }} />
+          <div className=" p-2 w-full ">
+            <h3 className="text-xl font-bold tracking-wide leading-6  font-robotoSerif">{props.title}</h3>
+            <span className="text-sm ">{formattedDate}</span>
+            <span className="text-sm">{props.category}</span>
 
-        </div>
-      </Link>
-    </article>
+            <div className="text-sm text-gray-900 tracking-wider leading-8 overflow-hidden w-full" dangerouslySetInnerHTML={{ __html: truncatedExcerpt }} />
+
+          </div>
+
+        </Link>
+      </article>
+   
+    </>
   )
 }
