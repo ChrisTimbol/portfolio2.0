@@ -8,6 +8,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'xxs': '14px',
+        'xxxs': '12px',
+        'xxxxs': '10px',
+      },
+      
       backgroundImage: {
         'hero-pattern': "url('/public/peaks.svg')",
       },

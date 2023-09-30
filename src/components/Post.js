@@ -33,35 +33,35 @@ export default function Post(props) {
     <>
       <article className="cursor-pointer ">
         
-        <Link href={props.slug} className=" hover:text-green-500  flex items-start">
+        <Link href={props.slug} className=" hover:text-teal-400 hover:border-teal-400 flex items-start">
 
 
           {props.thumbnail && ( /* Generate image only if it exist in API */
-            <div className="w-1/3 h-20 relative m-2 p-2  ">
+            <div className="w-1/3 h-20 relative m-2 p-4  ">
               <Image
                 src={props.thumbnail}
                 title={props.title}
                 alt="Image for Post"
                 fill
                 priority
-                className="rounded-xl h-full"
+                className="rounded-xl h-full border border-teal-800"
               />
             </div>
           )}
 
-          <div className=" p-2   w-11/12 ">
-            <h3 className="text-xl font-bold tracking-wider leading-6  font-robotoSerif">{props.title}</h3>
-            <span className="text-sm ">{formattedDate}</span>
+          <div className=" p-2 w-11/12 ">
+            <h3 className="text-xl text-teal-300 font-bold tracking-wide leading-6  font-robotoSerif ">{props.title}</h3>
+            <span className="text-xs text-teal-500 pb-4">{formattedDate}</span>
             <span className="text-sm">{props.category}</span>
 
-            <div className="text-sm text-gray-900 tracking-wide leading-8 overflow-hidden w-full " dangerouslySetInnerHTML={{ __html: truncatedExcerpt }} />
+            <div className="text-sm text-white overflow-hidden w-full " dangerouslySetInnerHTML={{ __html: truncatedExcerpt }} />
 
           </div>
 
         </Link>
 
       </article>
-   
+      <hr></hr>
     </>
   )
 }

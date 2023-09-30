@@ -16,74 +16,74 @@ export default async function Home() {
   return (
     <>
       <main className="relative min-h-screen flex flex-col items-center justify-center">
-        <div className="Hero Section w-full  z-20">
 
-          <Intro />
-          <Image src="/topwave.svg" className="" width={400} height={400} />
-          <div className=" p-2 bg-gradient-to-b from-teal-300 via-white to-teal-400">
 
-          <h2 className="text-4xl p-12 text-center  font-robotoSerif">About Me</h2>
-            <ul className="space-y-4 w-11/12">
-              
-              <li className="hover:gray-400">
-                Chris Timbol resides in Sunny San Diego California.
-              </li>
-              <li>
-                a dedicated web developer with a strong focus on front-end development and web design.
-              </li>
-              <li>
-                Specializes in React and Tailwind for rapid and optimal development.
-              </li>
-              <li>
-                Master in crafting custom WordPress themes and plugins.
-              </li>
-              <li>
-                pixel-perfect designs
-              </li>
-              <li>
-                user-friendly interfaces for a promising user experience
-              </li>
-            </ul>
+        <Intro />
+        <Image src="/wave.svg" width={400} height={400} />
 
-          </div>
-          <Image src="/bottomwave.svg" width={400} height={400} />
+        <div className="p-6 space-y-4 bg-gradient-to-b from-teal-400 via-teal-400 to-teal-300  rounded-lg shadow-lg">
+
+          <h2 className="text-4xl font-robotoSerif mb-6 text-teal-800">About Me</h2>
+
+
+          <p className=" text-black ">
+            Hi, I'm <span className="">Chris Timbol</span>,
+            a passionate web developer based in sunny San Diego,
+            California. I find joy in front-end development-
+            the artful blend of functional logic in code,
+            bringing designs to life, and creating something
+            unique in this world.
+          </p>
+          <p className="text-teal-900 ">
+            I thrive on translating user ideas into seamless digital experiences.
+
+            There's a profound sense of fulfillment in knowing that I can bring joy to someone through my creations, adding a touch of uniqueness to their digital experiences.
+          </p>
+
+
+
+          <p className="text-teal-900">
+            I excel in <span className="font-medium">React</span> and <span className="text-sm">Tailwind</span>, ensuring fast and elegant web solutions. My expertise extends to creating custom WordPress themes and plugins, delivering pixel-perfect designs and intuitive interfaces.
+          </p>
+
+
+          <a href="/work" className="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-full inline-block transition duration-300 ease-in-out transform hover:scale-105">
+            Explore My Work
+          </a>
 
         </div>
 
-        {/*        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#115e59" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,85.3C384,75,480,85,576,112C672,139,768,181,864,208C960,235,1056,245,1152,213.3C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-          </path>
-        </svg> */}
-<Image src="/topwave2.svg" width={400} height={400} />
-<section className="w-full  bg-gradient-to-b from-teal-400 via-teal-200 to-teal-100 ">
-
-       
-         
-          <h2 className="text-4xl p-12 text-center  font-robotoSerif">Latest Post</h2>
+        <Image src="/bottomwave.svg" width={400} height={400} />
 
 
+        <Image src="/wave2.svg" width={400} height={400} />
+        <section className="w-full bg-gradient-to-b from-teal-800 via-teal-950 to-teal-700  p-6 ">
 
-          <ul className=" ">
+          <h2 className="text-4xl text-teal-100 font-robotoSerif mb-6  ">Blog</h2>
+
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
             {posts.map((post) => (
-              <>
-                <li key={post?.id}>
+              <li key={post?.id}>
+                <Post
 
-                  <Post
-                    title={post?.title?.rendered}
-                    thumbnail={post?._embedded?.['wp:featuredmedia']?.[0]?.source_url}
-                    excerpt={post?.excerpt?.rendered}
-                    slug={post?.slug}
-                    date={post?.date}
-                  />
-                </li>
-                <hr></hr>
-              </>
+                  title={post?.title?.rendered}
+                  thumbnail={post?._embedded?.['wp:featuredmedia']?.[0]?.source_url}
+                  excerpt={post?.excerpt?.rendered}
+                  slug={post?.slug}
+                  date={post?.date}
+                />
+              </li>
             ))}
+
           </ul>
-          <Link className="hover:bg-teal-500 cursor-pointer p-4" href="/blog">{"See More->"}</Link>
+
+          <Link href="/blog" className="hover:bg-teal-500 cursor-pointer p-4 text-teal-50 block underline mt-6">
+            {'See More ->'}
+          </Link>
+
         </section>
-        <Image src="/lighttealwave.svg" width={400} height={400} />
+        <Image src="/PostWave.svg" width={400} height={400} />
 
         <div className="spacer my-32 "></div>
         <Sidebar categories={categories} />
