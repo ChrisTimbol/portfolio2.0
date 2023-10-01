@@ -44,6 +44,8 @@ export default function Post(props) {
                 alt="Image for Post"
                 fill
                 priority
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
+
                 className="rounded-xl h-full border border-teal-800"
               />
             </div>

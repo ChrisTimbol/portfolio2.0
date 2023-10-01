@@ -5,7 +5,7 @@ export default function Blog(props) {
     
     return (
         <>
-            <Image src="/wave2.svg" width={400} height={400} />
+            <Image alt="just waves in background image" src="/wave2.svg" width={400} height={400} />
             <section className="p-2 w-full bg-gradient-to-b from-gray-900 via-gray-700 to-gray-900  shadow-lg ">
 
                 <h2 className="text-4xl font-bold text-white  font-robotoSerif mb-6 underline underline-offset-8 decoration-teal-300">Latest post</h2>
@@ -32,7 +32,7 @@ export default function Blog(props) {
                 </Link>
 
             </section>
-            <Image src="/PostWave.svg" width={400} height={400} />
+            <Image alt="just waves in background image" src="/PostWave.svg" width={400} height={400} />
         </>
     )
 }

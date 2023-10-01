@@ -3,16 +3,16 @@ import Link from 'next/link'
 import Image from 'next/image'
 export default function Footer() {
     return (
-        <footer className=" text-white  py-12" style={{ backgroundImage: 'url("peaks.svg")' }}>
-
-            <div className="flex justify-center items-center">
+        <footer className=" text-white  py-12">
+                copyright all rights reserved
+{/*             <div className="flex justify-center items-center">
                 <Link href="/privacy-policy">Privacy Policy</Link>
                 <ul className=" flex justify-around space-4 items-center">
                 <li className='p-2 '><Link href="/">
-                    <Image src="/gmail.svg" width={32} height={32} /></Link></li>
+                    <Image alt="just waves in background image" src="/gmail.svg" width={32} height={32} /></Link></li>
                 <li className='p-2 '><Link href="/"><svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
+                    className="h-5 w-5"
                     fill="currentColor"
                     viewBox="0 0 24 24">
                     <path
@@ -20,7 +20,7 @@ export default function Footer() {
                 </svg></Link></li>
                 <li className='p-2'><Link href="/"><svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
+                    className="h-5 w-5"
                     fill="currentColor"
                     viewBox="0 0 24 24">
                     <path
@@ -28,7 +28,7 @@ export default function Footer() {
                 </svg></Link></li>
 
             </ul>
-            </div>
+            </div> */}
 
         </footer>
     )
