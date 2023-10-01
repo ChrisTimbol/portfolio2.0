@@ -26,17 +26,20 @@ export default function Header() {
 
   return (
     <header className="">
-      {/* Your header content */}
+
+      <div className="py-4 bg-gradient-to-r from-cyan-500 to-cyan-600 ">
+
+      </div>
+
       <div
-        className={`px-4 py-1 fixed top-0 z-50 flex justify-between w-full ${
-          isNavbarVisible ? '' : 'hidden'
-        }`}
+        className={`px-4 py-1 fixed top-0 z-50 flex justify-between w-full ${isNavbarVisible ? '' : 'hidden'
+          }`}
       >
         <Link
           className="text-2xs z-30 font-robotoSerif tracking-wide antialiased tracking-tighter transition-opacity duration-500 ease-in-out hover:opacity-75"
           href="/"
         >
-          <span className="font-semibold text-xxxs">TIMBOL</span>
+          <span className="font-semibold text-xxxs ">TIMBOL</span>
           <span className="bg-teal-800 font-black text-white text-xxxxs">.DEV</span>
         </Link>
         <Navbar showHamburger={isNavbarVisible} />

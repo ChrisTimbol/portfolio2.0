@@ -3,6 +3,7 @@ import fetchData from '@/components/Api';
 import Intro from '@/components/Intro'
 import About from '@/components/About'
 import Blog from '@/components/Blog'
+import Image from 'next/image'
 export default async function Home() {
 
   function getTimestamp() {
@@ -14,11 +15,15 @@ export default async function Home() {
   const categories = await fetchData('http://portfoliosite.local/wp-json/wp/v2/categories', { next: { revalidate: false | 0 | 10 } })
   return (
     <>
-      <main className="relative min-h-screen flex flex-col items-center justify-center">
+      <main className="relative min-h-screen flex flex-col items-center justify-center bg-cyan-950">
+
         <Intro />
+
         <About />
+        <div className="spacer bg-red-500 w-full py-64 flex justify-center">*Insert Cool transition here*</div>
         <Blog posts={posts} />
-        <Sidebar categories={categories} />
+
+
       </main>
 
 

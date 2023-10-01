@@ -3,9 +3,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 export default function Footer() {
     return (
-        <footer className=" text-white  py-12">
+        <footer className=" text-white  bg-gradient-to-b from-cyan-900 via-cyan-700 to-cyan-800 py-12">
                 copyright all rights reserved
-{/*             <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center">
                 <Link href="/privacy-policy">Privacy Policy</Link>
                 <ul className=" flex justify-around space-4 items-center">
                 <li className='p-2 '><Link href="/">
@@ -28,7 +28,7 @@ export default function Footer() {
                 </svg></Link></li>
 
             </ul>
-            </div> */}
+            </div>
 
         </footer>
     )
