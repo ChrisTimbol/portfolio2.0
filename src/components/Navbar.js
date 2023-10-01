@@ -3,10 +3,8 @@ import Hamburger from '@/components/Hamburger'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
-export default function Navbar(props) {
+export default function Navbar() {
     const [menu, setMenu] = useState(false)
-    const [isVisible, setIsVisible] = useState(true);
-    const [prevScrollPos, setPrevScrollPos] = useState(0)
 
     const toggleMenu = () => {
         setMenu(!menu) 
@@ -14,8 +12,6 @@ export default function Navbar(props) {
     const closeMenu = () => {
         setMenu(false); 
     }
-
-
     return (
         <>
             <div  className="relative z-30 " onClick={toggleMenu}>

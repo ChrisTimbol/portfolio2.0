@@ -33,7 +33,7 @@ export default function Post(props) {
     <>
       <article className="cursor-pointer ">
         
-        <Link href={props.slug} className=" hover:text-teal-400 hover:border-teal-400 flex items-start">
+        <Link href={props.slug} className=" hover:text-teal-400  hover:border-teal-400 flex items-start ">
 
 
           {props.thumbnail && ( /* Generate image only if it exist in API */
@@ -50,11 +50,11 @@ export default function Post(props) {
           )}
 
           <div className=" p-2 w-11/12 ">
-            <h3 className="text-xl text-teal-300 font-bold tracking-wide leading-6  font-robotoSerif ">{props.title}</h3>
-            <span className="text-xs text-teal-500 pb-4">{formattedDate}</span>
-            <span className="text-sm">{props.category}</span>
+            <h3 className="text-xl text-teal-50 font-bold tracking-wide leading-6  font-robotoSerif ">{props.title}</h3>
+            <span className="p-2 text-xs text-teal-600 pb-4">{formattedDate}</span>
+            <span className="p-2 text-xs text-teal-600 pb-4">test{props.category}</span>
 
-            <div className="text-sm text-white overflow-hidden w-full " dangerouslySetInnerHTML={{ __html: truncatedExcerpt }} />
+            <div className="text-sm text-gray-200 overflow-hidden w-full " dangerouslySetInnerHTML={{ __html: truncatedExcerpt }} />
 
           </div>
 

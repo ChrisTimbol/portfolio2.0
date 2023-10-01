@@ -10,14 +10,15 @@ export default function Intro() {
           className="namecontainer hover:border-teal-700 h-72 w-72 bg-teal-500 flex flex-col justify-center items-center rounded-full"
           initial={{ scale: 0, y: -500 }}
           animate={{ scale: 1, y: 0 }}
-          exit={{ scale:0, y: 500 }}
           transition={{ duration: 0.8 }}
         >
+            {/* Exploding text forward on hover etc  */}
+            {/* Make it bounce */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
-            className="text-3xl font-bold tracking-tight font-robotoSerif text-teal-100 hover:italic antialiased"
+            className="text-3xl font-bold tracking-tight font-robotoSerif text-teal-50 hover:italic antialiased"
           >
             CHRIS TIMBOL
           </motion.div>
