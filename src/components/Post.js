@@ -49,7 +49,7 @@ export default function Post(props) {
             </div>
           )}
 
-          <div className=" w-full">
+          <div className="w-full">
             <h3 className="text-xl text-white font-bold leading-6 font-robotoSerif">{props.title}</h3>
             <div className=" space-x-2">
               <span className="text-base text-cyan-700 rounded-full">

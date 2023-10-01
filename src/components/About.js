@@ -63,7 +63,7 @@ export default function About() {
           </a>
         </div>
       </div>
-    <Image src="triangleBottom.svg"  width={400} height={400} />
+    <Image alt="triangle bottom svg" src="triangleBottom.svg"  width={400} height={400} />
     </>
   );
 }

@@ -3,7 +3,7 @@ import fetchData from '@/components/Api';
 import Intro from '@/components/Intro'
 import About from '@/components/About'
 import Blog from '@/components/Blog'
-import Image from 'next/image'
+import Quote from '@/components/Quote'
 export default async function Home() {
 
   function getTimestamp() {
@@ -20,7 +20,7 @@ export default async function Home() {
         <Intro />
 
         <About />
-        <div className="spacer bg-red-500 w-full py-64 flex justify-center">*Insert Cool transition here*</div>
+        <Quote />
         <Blog posts={posts} />
 
 
