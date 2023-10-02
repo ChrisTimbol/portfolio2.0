@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Post from '@/components/Post';
 import Link from 'next/link';
-import AnimatedLink from './AnimatedLink';
+import { BlogLink } from './Icons';
+
 export default function Blog(props) {
     return (
         <>
@@ -27,9 +28,8 @@ export default function Blog(props) {
                         </li>
                     ))}
                 </ul>
-
-                <AnimatedLink />
-
+                <BlogLink/>
+                
             </section>
         </>
     );

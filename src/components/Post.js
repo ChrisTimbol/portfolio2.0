@@ -24,14 +24,14 @@ export default function Post(props) {
   const truncatedExcerpt = truncateExcerpt(props.excerpt, 10);
 
   return (
-    <article className="cursor-pointer mb-8 p-4 bg-cyan-950 rounded-lg border border-cyan-500 shadow-md hover:scale-105 transition duration-300 hover:shadow-xl">
+    <article className="cursor-pointer h-56 overflow-hidden mb-8 p-4 bg-gray-950 rounded-lg border border-cyan-700 shadow-md hover:scale-105 transition duration-300 hover:shadow-xl">
       <Link href={props.slug} className="hover:text-cyan-400">
-        <h2 className="text-xl text-white font-bold font-robotoSerif mb-2">
+        <h2 className="text-2xl text-white font-bold font-robotoSerif mb-2">
           {props.title}
         </h2>
         {props.thumbnail && ( /* if thumbnail exist */
-          <div className="flex">
-            <div className="w-5/12 h-20 mr-4 relative flex items-end">
+          <div className="flex ">
+            <div className="w-1/2 h-20 mr-4 relative flex ">
               <Image
                 src={props.thumbnail}
                 title={props.title}
@@ -44,10 +44,10 @@ export default function Post(props) {
             </div>
             <div className="flex flex-col">
               <div className="flex space-x-2 mb-2 sm:mb-4 lg:mb-6">
-                <span className="text-base text-cyan-700 rounded-full">
+                <span className="text-sm  text-cyan-700 rounded-full">
                   {formattedDate}
                 </span>
-                <span className="text-xxxs text-cyan-950 bg-cyan-400 p-1 rounded-full">
+                <span className="text-xxxxs text-cyan-950 bg-cyan-400  px-2 rounded-full">
                   {props.category} nextjs
                 </span>
               </div>
@@ -56,12 +56,12 @@ export default function Post(props) {
           </div>
         )}
         {!props.thumbnail && ( /* If thumbnail doesnt exist still create a post without image */
-          <div className="flex flex-col space-y-2">
-            <div className="flex space-x-2">
-              <span className="text-base text-cyan-700 rounded-full">
+          <div className="flex flex-col">
+              <div className="flex space-x-2 mb-2 sm:mb-4 lg:mb-6">
+              <span className="text-sm text-cyan-700 rounded-full">
                 {formattedDate}
               </span>
-              <span className="text-xxxs text-cyan-950 bg-cyan-400 p-1 rounded-full">
+              <span className="text-xxxxs text-cyan-950 bg-cyan-400 px-2 rounded-full">
                 {props.category} nextjs
               </span>
             </div>

@@ -1,8 +1,9 @@
 'use client'
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import Project from '@/components/Project';
+import { motion } from 'framer-motion';
 import { ChevronLeftIcon, ChevronRightIcon } from './Icons';
+import Image from 'next/image';
+
 const Carousel = ({ projects }) => {
     const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
 
@@ -11,29 +12,41 @@ const Carousel = ({ projects }) => {
     };
 
     return (
-        <div className="relative bg-gray-950">
-            <AnimatePresence >
+        <div className="h-full  border border-green-500">
+         <div className="hereContainer h-1/4 border-teal-500 border">test
+            
+            </div>
+            <motion.div
+                key={currentProjectIndex}
+                className="h-1/2 w-full border border-red-500 relative"
+                initial={{ opacity: 0, scale: 0, rotate: -20 }}
+                animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                exit={{ opacity: 0, scale: 0.8, rotate: 10 }}
+                transition={{ duration: 0.5, type: 'tween' }}
+            >
+                <Image
+                    className="w-full h-full"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 
-                <Project
-                    key={currentProjectIndex} // Add key prop here
-                    title={projects[currentProjectIndex].title}
-                    description={projects[currentProjectIndex].description}
-                />
+                    src="/example.png"
+                    alt="Image for Post"
+                    fill
+                    priority />
+            </motion.div>
 
-            </AnimatePresence>
-
-            <div className="absolute z-30 left-0 right-0 bottom-16 flex justify-between p-4">
+            <div className="h-1/4 w-full  flex border border-red-500 justify-around items-center w-full">
                 <motion.div
-                    onClick={() =>
-                        changeProject((currentProjectIndex - 1 + projects.length) % projects.length)
-                    }
-                >
+                    onClick={() => changeProject((currentProjectIndex - 1 + projects.length) % projects.length)}
+                    className=" w-1/4 hover:scale-105 h-full justify-center cursor-pointer flex flex-col items-center hover:border hover:border-cyan-950  transition duration-300 ease-in-out">
                     <ChevronLeftIcon />
+
                 </motion.div>
+
                 <motion.div
                     onClick={() => changeProject((currentProjectIndex + 1) % projects.length)}
-                >
+                    className=" w-1/4 hover:scale-105 h-full justify-center cursor-pointer flex flex-col items-center hover:border hover:border-cyan-950 transition duration-300 ease-in-out">
                     <ChevronRightIcon />
+
                 </motion.div>
             </div>
         </div>

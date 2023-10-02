@@ -1,7 +1,6 @@
 import Sidebar from '@/components/Sidebar'
 import fetchData from '@/components/Api';
 import Intro from '@/components/Intro'
-import About from '@/components/About'
 import Blog from '@/components/Blog'
 import Quote from '@/components/Quote'
 export default async function Home() {
@@ -15,9 +14,8 @@ export default async function Home() {
   const categories = await fetchData('http://portfoliosite.local/wp-json/wp/v2/categories', { next: { revalidate: false | 0 | 10 } })
   return (
     <>
-      <main className="relative min-h-screen flex flex-col items-center justify-center bg-cyan-950">
+      <main className=" relative min-h-screen flex flex-col items-center justify-center bg-cyan-950">
         <Intro />
-        <About />
         <Quote />
         <Blog posts={posts} />
       </main>

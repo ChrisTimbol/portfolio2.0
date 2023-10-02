@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 export default function Quote() {
-    const quote = "Excellence is an art won by training and habituation. — Socrates";
+    const quote = "Excellence is an art won by training and habituation.\n- Socrates";
     const [typedText, setTypedText] = useState('');
 
     useEffect(() => {
@@ -23,15 +23,16 @@ export default function Quote() {
     }, []); // Empty dependency array ensures useEffect runs once after initial render
 
     return (
-        <div className="spacer bg-cyan-950 w-full h-full flex justify-center text-white items-center">
-            <motion.div 
-                initial={{ opacity: 0 }} 
-                animate={{ opacity: 1 }} 
-                className="h-12"
-                style={{ width: '400px', textAlign: 'center' }}
-            >
-                {typedText}
-            </motion.div>
+        <div className="spacer h-32 flex justify-center text-white items-center">
+            {typedText && (
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="text-base font-mono text-center"
+                >
+                    {typedText}
+                </motion.div>
+            )}
         </div>
     );
 }

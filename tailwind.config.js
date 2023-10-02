@@ -13,7 +13,9 @@ module.exports = {
         'xxxs': '12px',
         'xxxxs': '10px',
       },
-      
+      transitionProperty: {
+        'rotate-scale': 'transform',
+      },
       backgroundImage: {
         'hero-pattern': "url('/public/peaks.svg')",
       },
@@ -31,6 +33,7 @@ module.exports = {
         roboto: ['var(--font-roboto)'],
         robotoSerif: ['var(--font-roboto-serif)'],
         robotoMono: ['var(--font-roboto-mono)'],
+        styleScript: ['var(--font-stylescript)'],
       },
       
     },

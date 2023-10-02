@@ -26,11 +26,6 @@ export default function Header() {
 
   return (
     <header className="">
-
-      <div className="py-4 bg-gradient-to-r from-cyan-500 to-cyan-800 ">
-
-      </div>
-
       <div
         className={`px-4 py-1 fixed top-0 z-50 flex justify-between w-full ${isNavbarVisible ? '' : 'hidden'
           }`}
