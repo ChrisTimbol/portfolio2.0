@@ -1,15 +1,21 @@
 'use client'
 import Image from 'next/image';
 import { RocketIcon, SunIcon, MagicWand, FullHeartIcon, CodeBrackets, People, ThumbsUp } from '@/components/Icons';
-
+import { useScroll } from 'framer-motion';
+import { useRef } from 'react';
+import { motion } from 'framer-motion'
+import Link from 'next/link'
 export default function About() {
   return (
     <>
       <div className="bg-gradient-to-b from-cyan-400 via-cyan-900 to-cyan-950 text-cyan-100 leading-loose p-4">
         <div className="justify-center flex flex-col  space-y-8">
-          <h2 className="text-4xl sm:text-5xl font-robotoSerif text-white underline decoration-cyan-300 underline-offset-8 py-4">
-            About Me
-          </h2>
+        <h2
+          
+          className="text-4xl sm:text-5xl font-robotoSerif text-white underline decoration-cyan-300 underline-offset-8 py-4"
+        >
+          About Me
+        </h2>
 
           <div className="flex flex-col items-center space-y-4">
             <p className="about-paragraph">
@@ -55,12 +61,12 @@ export default function About() {
             </p>
           </div>
 
-          <a
+          <Link
             href="/work"
             className="bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-bold py-4 w-1/2  px-8 rounded-full inline-block transition duration-300 ease-in-out transform hover:scale-105"
           >
             Explore My Work
-          </a>
+          </Link>
         </div>
       </div>
     <Image alt="triangle bottom svg" src="triangleBottom.svg"  width={400} height={400} />

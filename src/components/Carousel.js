@@ -23,13 +23,18 @@ const Carousel = ({ projects }) => {
             </AnimatePresence>
 
             <div className="absolute z-30 left-0 right-0 bottom-16 flex justify-between p-4">
-                <div  onClick={() => changeProject((currentProjectIndex - 1 + projects.length) % projects.length)}>
+                <motion.div
+                    onClick={() =>
+                        changeProject((currentProjectIndex - 1 + projects.length) % projects.length)
+                    }
+                >
                     <ChevronLeftIcon />
-
-                </div>
-                <div onClick={() => changeProject((currentProjectIndex + 1) % projects.length)}>
+                </motion.div>
+                <motion.div
+                    onClick={() => changeProject((currentProjectIndex + 1) % projects.length)}
+                >
                     <ChevronRightIcon />
-                </div>
+                </motion.div>
             </div>
         </div>
     );

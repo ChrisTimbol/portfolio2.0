@@ -1,5 +1,4 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { memo } from 'react';
 
 export const SunIcon = () => (
     <svg className="w-6 h-6 text-yellow-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -69,7 +68,7 @@ export const People = () => (
     </svg>
 )
 
-export const ChevronLeftIcon = () => (
+export const ChevronLeftIcon = memo(() => (
     <svg
       className="w-6 h-6 text-cyan-100 dark:text-white"
       aria-hidden="true"
@@ -85,9 +84,9 @@ export const ChevronLeftIcon = () => (
         d="M7 1 1.3 6.326a.91.91 0 0 0 0 1.348L7 13"
       />
     </svg>
-  );
+  ));
   
-  export const ChevronRightIcon = () => (
+  export const ChevronRightIcon = memo(() => (
     <svg
       className="w-6 h-6 text-cyan-100 dark:text-white"
       aria-hidden="true"
@@ -103,4 +102,4 @@ export const ChevronLeftIcon = () => (
         d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
       />
     </svg>
-  );
+  ));
