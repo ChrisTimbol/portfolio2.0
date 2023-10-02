@@ -1,28 +1,38 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
-/* Project in a container for displaying in a List Of Projects */
 export default function Project(props) {
     return (
-        <div className="min-w-full  border border-neutral-300 shadow-md bg-white cursor-pointer space-y-4 rounded-lg transition-transform hover:scale-105 relative">
+        <div className="min-w-full h-screen">
             {/* Project Container */}
-            <div className="h-96 relative rounded-lg overflow-hidden border border-gray-300 space-y-4">
-                <Image
-                    src="/example.png"
-                    alt="Image for Post"
-                    fill
-                    priority
-                />
-                {/* Centered Title and Description */}
-                <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50 transition-opacity opacity-0 hover:opacity-100">
-                    <h2 className="text-2xl font-semibold text-white"> {/* Change text color to white */}
-                        {props.title}
-                    </h2>
-                    <p className="text-sm text-white"> {/* Change text color to white */}
-                        {props.description}
-                    </p>
-                </div>
+        <motion.div
+            className="h-full bg-red-500"
+            initial={{ opacity: 0, x: '100%' }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0 , x: '-100%' }}
+            transition={{ duration: 0.5 }}
+        >
+            <Image
+                src="/example.png"
+                alt="Image for Post"
+                fill
+                priority
+            />
+        </motion.div>
+            <div
+
+                className="absolute left-0 right-0 bottom-8 text-center m-20"
+            >
+                <h2 className="text-3xl font-semibold font-robotoSerif text-cyan-100">
+                    {props.title}
+                </h2>
+                <p className="text-lg font-roboto text-cyan-100">
+                    {props.description}
+                </p>
             </div>
+
         </div>
     )
 }

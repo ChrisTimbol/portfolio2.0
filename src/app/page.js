@@ -16,17 +16,11 @@ export default async function Home() {
   return (
     <>
       <main className="relative min-h-screen flex flex-col items-center justify-center bg-cyan-950">
-
         <Intro />
-
         <About />
         <Quote />
         <Blog posts={posts} />
-
-
       </main>
-
-
     </>
   )
 }

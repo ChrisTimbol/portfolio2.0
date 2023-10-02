@@ -1,20 +1,22 @@
+
 import Sidebar from '@/components/Sidebar'
 import Project from '@/components/Project'
-export default async function Work() {
-    return (
-        <>
-            <main className="px-1  min-h-screen flex flex-col items-center relative">               
-            <section className="space-y-8 w-full"> 
-                <h1 className="text-5xl flex justify-center">Projects</h1>
-                <Project title="Project 1" description="Description 1" />
-                <Project title="Project 2" description="Description 2" />
-                <Project title="Project 3" description="Description 3" />
-            </section>
+import Carousel from '@/components/Carousel';
 
-                {/*              <Sidebar categories={categories} /> */}
+const projects = [
+    { title: 'Project 1', description: 'Description 1' },
+    { title: 'Project 2', description: 'Description 2' },
+    { title: 'Project 3', description: 'Description 3' }
+  ];
+
+export default function Work() {
+    return (
+        <>{/* zoom out then zoom in  */}
+            <main className="overflow-hidden relative ">
+            <Carousel projects={projects} />
             </main>
 
-            <div className=""></div>
+
         </>
     )
 }

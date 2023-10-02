@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <header className="">
 
-      <div className="py-4 bg-gradient-to-r from-cyan-500 to-cyan-600 ">
+      <div className="py-4 bg-gradient-to-r from-cyan-800 to-cyan-900 ">
 
       </div>
 

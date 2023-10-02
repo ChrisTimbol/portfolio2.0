@@ -28,11 +28,11 @@ export default function Blog(props) {
                         ))}
                     </ul>
 
-                    <Link href="/work" className="text-white text-sm text-end border border-cyan-800 p-4 ">
+                    <Link href="/work" className="text-teal-50 text-base font-semibold text-end border border-cyan-800 p-4 ">
                         See More Post{" "}
                         <svg className="w-6 h-6 text-cyan-400 dark:text-white inline-flex" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 8 14">
-    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"/>
-  </svg>
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"/>
+    </svg>
                     </Link>
                 </div>
             </section>
