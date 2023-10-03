@@ -2,6 +2,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { Roboto, Roboto_Serif, Roboto_Mono, Style_Script } from 'next/font/google'
+import Gotopbutton from '@/components/Gotopbutton';
 
 const roboto = Roboto({
   weight: '400',
@@ -35,8 +36,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${roboto.variable} ${stylescript.variable} ${roboto_Serif.variable} ${roboto_Mono.variable}`}>
       <body className="font-roboto">
+
         <Header />
         {children}
+        <Gotopbutton /> 
         <Footer />
       </body>
     </html>

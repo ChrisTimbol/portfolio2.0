@@ -1,7 +1,7 @@
 
 import fetchData from '@/components/Api';
 import Blog from '@/components/Blog'
-
+import Image from 'next/image'
 export default async function Home() {
 
   function getTimestamp() {
@@ -13,7 +13,10 @@ export default async function Home() {
   const categories = await fetchData('http://portfoliosite.local/wp-json/wp/v2/categories', { next: { revalidate: false | 0 | 10 } })
   return (
     <>
-      <main className=" relative min-h-screen flex flex-col items-center justify-center bg-cyan-950">
+      <main className=" h-full w-full  bg-gradient-to-b from-cyan-600 via-cyan-900 to-cyan-600 text-cyan-50 relative ">
+        <div className="relative">
+          <Image src="aboutwav.svg" width={400} height={400} alt="About Wave" />
+        </div>
         <Blog posts={posts} />
       </main>
     </>
