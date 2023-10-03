@@ -1,8 +1,7 @@
-import Sidebar from '@/components/Sidebar'
+
 import fetchData from '@/components/Api';
-import Intro from '@/components/Intro'
 import Blog from '@/components/Blog'
-import Quote from '@/components/Quote'
+
 export default async function Home() {
 
   function getTimestamp() {

@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect, useLayoutEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import Hamburger from '@/components/Hamburger';
 import Link from 'next/link';
 import { GithubMediaIcon, LinkedInMediaIcon, GmailMediaIcon, InstagramMediaIcon } from './Icons';
