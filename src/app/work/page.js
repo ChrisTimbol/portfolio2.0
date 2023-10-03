@@ -12,7 +12,7 @@ const projects = [
 export default function Work() {
     return (
         <>
-            <main className="px-2 w-full bg-gray-950 text-cyan-100 leading-loose">
+            <main className="px-2 py-12  w-full bg-gray-950 text-cyan-100 leading-loose">
                 {projects.map((project, index) => (
                     <Project key={index} title={project.title} description={project.description} />
                 ))}
