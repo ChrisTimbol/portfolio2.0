@@ -4,7 +4,7 @@ import Project from '@/components/Project';
 import Image from 'next/image';
 import { ArrowIcon } from '@/components/Icons';
 const projects = [
-    { title: 'Project 1', description: 'Description 1Description 1Description 1Description 1Description 1Description 1Description 1' },
+    { title: 'Project 1', description: 'Description 1Description 1Description 1Descriptiasdasasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddasdasdasdasdasdasdsaon 1Description 1Description 1Description 1' },
     { title: 'Project 2', description: 'Description 2Description 1Description 1Description 1Description 1' },
     { title: 'Project 3', description: 'Description Description 1Description 1Description 1Description 13' }
 ];
