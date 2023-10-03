@@ -20,13 +20,12 @@ const truncateExcerpt = (text, wordLimit) => {
 
 export default function Post(props) {
   const formattedDate = formatDate(props.date);
-  // Limit the excerpt to 20 words
   const truncatedExcerpt = truncateExcerpt(props.excerpt, 10);
 
   return (
-    <article className="cursor-pointer h-56 overflow-hidden mb-8 p-4 bg-gray-950 rounded-lg border border-cyan-700 shadow-md hover:scale-105 transition duration-300 hover:shadow-xl">
+    <article className="cursor-pointer h-56 overflow-hidden mb-8 p-4 bg-cyan-950 rounded-lg shadow-xl hover:scale-105 hover:shadow-cyan-300 shadow-cyan-950 transition duration-300 hover:shadow-2xl">
       <Link href={props.slug} className="hover:text-cyan-400">
-        <h2 className="text-2xl text-white font-bold font-robotoSerif mb-2">
+        <h2 className="text-2xl  text-cyan-50 font-bold font-robotoSerif mb-2 leading-relaxed">
           {props.title}
         </h2>
         {props.thumbnail && ( /* if thumbnail exist */
@@ -39,19 +38,19 @@ export default function Post(props) {
                 fill
                 priority
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
-                className="rounded-lg"
+                className="rounded-lg "
               />
             </div>
             <div className="flex flex-col">
               <div className="flex space-x-2 mb-2 sm:mb-4 lg:mb-6">
-                <span className="text-sm  text-cyan-700 rounded-full">
+                <span className="text-sm text-cyan-600  rounded-full">
                   {formattedDate}
                 </span>
-                <span className="text-xxxxs text-cyan-950 bg-cyan-400  px-2 rounded-full">
+                <span className="text-xs text-cyan-50 bg-cyan-800  px-2 rounded-full">
                   {props.category} nextjs
                 </span>
               </div>
-              <div className="font-medium font-roboto text-base overflow-hidden" dangerouslySetInnerHTML={{ __html: truncatedExcerpt }} />
+              <div className="font-medium   font-roboto  text-cyan-100   overflow-hidden" dangerouslySetInnerHTML={{ __html: truncatedExcerpt }} />
             </div>
           </div>
         )}
@@ -65,7 +64,7 @@ export default function Post(props) {
                 {props.category} nextjs
               </span>
             </div>
-            <div className="font-medium font-roboto text-base overflow-hidden" dangerouslySetInnerHTML={{ __html: truncatedExcerpt }} />
+            <div className="font-medium font-roboto text-cyan-100 overflow-hidden" dangerouslySetInnerHTML={{ __html: truncatedExcerpt }} />
           </div>
         )}
       </Link>
