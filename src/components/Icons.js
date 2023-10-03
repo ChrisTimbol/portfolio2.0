@@ -1,3 +1,4 @@
+
 import React, { memo } from 'react';
 
 export const SunIcon = () => (
@@ -166,5 +167,25 @@ export const UpsideTriangle = () => {
     <svg className="w-full bg-gradient-to-b from-cyan-900 via-cyan-800 to-cyan-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
       <polygon points="0,0 100,0 50,100" fill="#0e7490" />
     </svg>
+  );
+};
+
+export const ArrowIcon = () => {
+  return (
+      <svg
+          className="inline-flex w-4 h-4 text-cyan-800 dark:text-cyan-500"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 10 14"
+      >
+          <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M5 13V1m0 0L1 5m4-4 4 4"
+          />
+      </svg>
   );
 };

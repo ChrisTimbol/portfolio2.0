@@ -3,6 +3,7 @@ import Post from '@/components/Post';
 import Link from 'next/link';
 import { BlogLink } from './Icons';
 import { UpsideTriangle } from './Icons';
+import { ArrowIcon } from './Icons';
 export default function Blog(props) {
     return (
         <>
@@ -34,7 +35,7 @@ export default function Blog(props) {
                 </Link>
 
 
-
+                       {/*  <ArrowIcon /> */}
             </section>
             <UpsideTriangle />
         </>
