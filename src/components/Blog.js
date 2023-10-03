@@ -9,11 +9,11 @@ export default function Blog(props) {
         <>
             <Image alt="background wave" src="/triangleTop.svg" width={400} height={400} />
 
-            <section className="p-4 bg-gradient-to-b from-cyan-800 via-cyan-950 to-cyan-700 text-cyan-100  ">
+            <section className="p-4 bg-gradient-to-b from-cyan-900 via-cyan-950 to-cyan-700 text-cyan-100  ">
 
 
-                <h2 className="py-4 text-4xl sm:text-5xl font-robotoSerif text-white underline decoration-cyan-300 underline-offset-8 ">
-                    Latest post
+                <h2 className="py-4 text-lg font-robotoSerif text-red-500 ">
+                    LATEST POST
                 </h2>
 
                 <ul className="">
