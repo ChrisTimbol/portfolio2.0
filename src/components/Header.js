@@ -35,7 +35,7 @@ export default function Header() {
           href="/"
         >
           <span className="font-semibold text-white text-xxxs ">TIMBOL</span>
-          <span className="bg-cyan-900 text-white text-xxxxs">.DEV</span>
+          <span className="bg-slate-900 text-white text-xxxxs">.DEV</span>
         </Link>
         <Navbar showHamburger={isNavbarVisible} />
       </div>
