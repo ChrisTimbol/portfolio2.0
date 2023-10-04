@@ -15,10 +15,7 @@ export default async function Home() {
 
   return (
     <>
-      <div className="relative h-64 w-full">
-        <Image src="newWave.svg" className="object-cover" fill priority alt="About Wave" />
-      </div>
-      <main className="">
+            <main className="min-h-screen flex justify-center px-4 h-full w-full space-y-16  bg-slate-950 text-slate-50 relative ">
 
         <section className="px-4 space-y-12 bg-slate-950 pb-12  w-full flex flex-col items-center justify-center ">
 
