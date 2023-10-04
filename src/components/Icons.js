@@ -163,7 +163,7 @@ export const InstagramMediaIcon = () => (
 
 export const UpsideTriangle = () => {
   return (
-    <svg className="w-full bg-gradient-to-b from-cyan-900 via-cyan-800 to-cyan-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <svg className="w-full bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
       <polygon points="0,0 100,0 50,100" fill="#0e7490" />
     </svg>
   );
