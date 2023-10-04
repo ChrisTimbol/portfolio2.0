@@ -10,30 +10,30 @@ export default function Who() {
 
             </div>
             <main className="p-4 h-full w-full space-y-16  bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-slate-50 relative ">
-                <h2 className="text-4xl text-cyan-400 font-robotoSerif font-semibold ">Who</h2>
+                <h2 className="text-4xl text-cyan-400 font-robotoSerif font-semibold">Who</h2>
 
 
-
-                <div className="group shadow-2xl h-max rounded-full w-48 md:w-64 lg:w-72 xl:w-80 mx-auto overflow-hidden relative transition duration-300 ease-in-out transform hover:scale-105">
-                    <div className="relative " style={{ paddingBottom: '100%' }}>
+                <div className="group shadow-2xl h-max rounded-full  mx-auto overflow-hidden relative ">
+                    <div className="relative rounded-full bg-gradient-to-b from-slate-900 via-slate-800 to-slate-950 overflow-hidden bg-red-600  hue-rotate-45  contrast-110   " style={{ paddingBottom: '100%' }}>
                         <Image
-                            src="/avatar.png"
+                            src="/.png"
                             alt="avatar image"
                             fill
                             sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
-                            className="rounded-full group-hover:filter hover:brightness-150 hover:contrast-125 hover:saturate-200"
+                            className="rounded-full"
                         />
                     </div>
                 </div>
+
 
 
                 <div className="p-4  flex flex-col items-center justify-center text-base text-center space-y-4 w-full ">
 
                     <CodeBrackets />
 
-                    <p className="about-paragraph  ">
+                    <p className="about-paragraph group  ">
                         Hi, I'm{' '}
-                        <span className="bg-gradient-to-r from-cyan-300 via-cyan-400 to-cyan-600 bg-clip-text text-transparent ">Chris Timbol</span>, a passionate web developer based in
+                        <span className="bg-gradient-to-r from-cyan-300 via-cyan-400 to-cyan-600 bg-clip-text text-transparent group-hover:brightness-110 group-hover:sepia group-hover:hue-rotate-45 transition-transform ">Chris Timbol</span>, a passionate web developer based in
                         Sunny San Diego
                     </p>
                     <ThumbsUp />

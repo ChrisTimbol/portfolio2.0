@@ -19,7 +19,7 @@ export default async function Home() {
         <div className="relative">
           <Image src="aboutwav.svg" width={400} height={400} alt="About Wave" />
         </div>
-        <section className="px-4 space-y-12 bg-slate-950   ">
+        <section className="px-4 space-y-12 bg-slate-950   pb-12">
 
           <h2 className="text-4xl text-cyan-400 font-robotoSerif font-semibold ">Latest Post</h2>
           <PostLoop posts={posts} />

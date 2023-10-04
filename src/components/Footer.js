@@ -31,8 +31,8 @@ export default function Footer() {
                 </Link>
 
             </div>
-            <p className="text-sm">Copyright © 2023. All rights reserved.</p>
             <Link className="hover:text-teal-200 cursor-pointer text-sm " href="/privacy-policy">Privacy Policy</Link>
+            <p className="text-sm pb-1">Copyright © 2023. All rights reserved.</p>
 
         </footer>
     );

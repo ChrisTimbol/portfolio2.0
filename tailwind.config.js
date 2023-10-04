@@ -13,6 +13,9 @@ module.exports = {
         'xxxs': '12px',
         'xxxxs': '10px',
       },
+      grayscale: {
+        50: '50%',
+      },
       transitionProperty: {
         'rotate-scale': 'transform',
       },

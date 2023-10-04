@@ -14,7 +14,8 @@ const truncateExcerpt = (text, wordLimit) => {
   if (text) {
     const words = text.split(' ');
     if (words.length > wordLimit) {
-      return words.slice(0, wordLimit).join(' ');
+      const truncatedText = words.slice(0, wordLimit).join(' ');
+      return truncatedText + '...';
     } else {
       return text;
     }
@@ -24,7 +25,7 @@ const truncateExcerpt = (text, wordLimit) => {
 
 export default function Post({ date, excerpt, thumbnail, title, category, slug }) {
   const formattedDate = formatDate(date);
-  const truncatedExcerpt = truncateExcerpt(excerpt, 30);
+  const truncatedExcerpt = truncateExcerpt(excerpt, 50);
 
   return (
     <article className="cursor-pointer p-4  overflow-hidden h-full bg-slate-900 rounded-lg transition duration-300 hover:shadow-xl">
@@ -58,7 +59,7 @@ export default function Post({ date, excerpt, thumbnail, title, category, slug }
           )}
          {/*  {!thumbnail && ( */}
             <div
-              className={`font-roboto text-sm w-full h-full text-slate-100 `}
+              className={`font-roboto  w-full h-full text-slate-100  line-clamp-4 overflow-hidden `}
               dangerouslySetInnerHTML={{ __html: truncatedExcerpt }}
             />
 

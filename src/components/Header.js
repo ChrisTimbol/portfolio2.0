@@ -25,7 +25,7 @@ export default function Header() {
   }, [prevScrollPos]);
 
   return (
-    <header className="">
+    <header className="bg-slate-950 h-8">
       <div
         className={`px-4 py-1 fixed top-0 z-50 flex justify-between w-full ${isNavbarVisible ? '' : 'hidden'
           }`}
