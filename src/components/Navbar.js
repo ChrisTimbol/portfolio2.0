@@ -65,19 +65,26 @@ export default function Navbar() {
 
                         </div>
                         <ul className='fixed bottom-0 right-0 w-3/4   h-3/4 flex flex-col justify-between border-t-2 border-slate-800'>
-                            <li className=' text-center text-4xl py-8 hover:border hover:border-slate-500 w-full transition duration-300 ease-in-out hover:bg-slate-300 hover:bg-opacity-25'>
-                                <Link onClick={closeMenu} href="/">Home</Link>
-                            </li>
-                            <li className=' text-center text-4xl py-8 hover:border hover:border-slate-300 w-full transition duration-300 ease-in-out hover:bg-slate-300 hover:bg-opacity-25'>
-                                <Link onClick={closeMenu} href="/who">Who</Link>
-                            </li>
-                            <li className=' text-center text-4xl py-8 hover:border hover:border-slate-300 w-full transition duration-300 ease-in-out hover:bg-slate-300 hover:bg-opacity-25'>
-                                <Link onClick={closeMenu} href="/blog">Blog</Link>
-                            </li>
-                            <li className=' text-center text-4xl py-8 hover:border hover:border-slate-300 w-full transition duration-300 ease-in-out hover:bg-slate-300 hover:bg-opacity-25'>
-                                <Link onClick={closeMenu} href="/work">Work</Link>
-                            </li>
-
+                            <Link className="" onClick={closeMenu} href="/">
+                                <li className=' text-center text-4xl py-8 hover:border hover:border-slate-500 w-full transition duration-300 ease-in-out hover:bg-slate-300 hover:bg-opacity-25'>
+                                    Home
+                                </li>
+                            </Link>
+                            <Link onClick={closeMenu} href="/who">
+                                <li className=' text-center text-4xl py-8  hover:border hover:border-slate-300 w-full transition duration-300 ease-in-out hover:bg-slate-300 hover:bg-opacity-25'>
+                                    Who
+                                </li>
+                            </Link>
+                            <Link onClick={closeMenu} href="/blog">
+                                <li className=' text-center text-4xl py-8 hover:border hover:border-slate-300 w-full transition duration-300 ease-in-out hover:bg-slate-300 hover:bg-opacity-25'>
+                                    Blog
+                                </li>
+                            </Link>
+                            <Link onClick={closeMenu} href="/work">
+                                <li className=' text-center text-4xl py-8 hover:border hover:border-slate-300 w-full transition duration-300 ease-in-out hover:bg-slate-300 hover:bg-opacity-25'>
+                                    Work
+                                </li>
+                            </Link>
                         </ul>
                     </nav>
 
