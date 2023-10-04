@@ -25,7 +25,7 @@ export default async function Page({ params }) {
 
   return (
     <>
-      <main className="min-h-72 p-8 bg-slate-950 text-slate-100">
+            <main className="min-h-screen p-4 h-full w-full space-y-16  bg-slate-950 text-slate-50 relative ">
         <ul className="">
           {postData.map((data) => (
 

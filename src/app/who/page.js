@@ -5,8 +5,8 @@ import Link from 'next/link'
 export default function Who() {
     return (
         <>
-            <div className="relative" >
-                <Image src="aboutwav.svg" width={400} height={400} alt="About Wave" />
+            <div className="relative h-64" >
+                <Image src="aboutwav.svg"  className="object-cover" fill  priority alt="About Wave" />
 
             </div>
             <main className="px-4 h-full w-full space-y-16  bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-slate-50 relative ">
@@ -16,7 +16,7 @@ export default function Who() {
                 <div className="group shadow-2xl h-max rounded-full  mx-auto overflow-hidden relative ">
                     <div className="relative rounded-full bg-gradient-to-b from-slate-900 via-slate-800 to-slate-950 overflow-hidden bg-red-600  hue-rotate-45  contrast-110   " style={{ paddingBottom: '100%' }}>
                         <Image
-                            src="/.png"
+                            src="BlobActualFace.svg"
                             alt="avatar image"
                             fill
                             sizes="(max-width: 640px) 100vw, (max-width: 768px) 80vw, 1200px"
@@ -24,7 +24,6 @@ export default function Who() {
                         />
                     </div>
                 </div>
-
 
 
                 <div className="p-4  flex flex-col items-center justify-center text-base text-center space-y-4 w-full ">

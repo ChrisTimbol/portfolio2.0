@@ -28,7 +28,7 @@ export default function Post({ date, excerpt, thumbnail, title, category, slug }
   const truncatedExcerpt = truncateExcerpt(excerpt, 50);
 
   return (
-    <article className="group cursor-pointer p-4  overflow-hidden h-full p-4 bg-slate-900 rounded-lg shadow-sm hover:shadow-cyan-400 transition duration-300 hover:shadow-xl">
+    <article className="h-60 max-w-sm group cursor-pointer p-4  overflow-hidden  p-4 bg-slate-800 rounded-lg shadow-sm hover:shadow-cyan-400 transition duration-300 hover:shadow-xl">
       <Link href={slug} className="">
 
 
@@ -47,7 +47,7 @@ export default function Post({ date, excerpt, thumbnail, title, category, slug }
 
         <div className="flex">
           {thumbnail && (
-            <div className="w-1/2 h-32 mr-2 relative ">
+            <div className="w-1/2 h-32 mr-4 relative ">
               <Image
                 src={thumbnail}
                 alt={title || 'Image of a post'}

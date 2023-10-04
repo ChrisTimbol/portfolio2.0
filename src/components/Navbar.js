@@ -39,53 +39,54 @@ export default function Navbar() {
                 <div className='fixed bottom-0 left-0 w-full h-full z-10 bg-opacity-75 bg-slate-950 backdrop-blur text-white '>
                     <nav className="w-full h-full relative text-6xl font-robotoSerif h-full  ">
 
-                        <div className=" fixed h-3/4  w-1/4 left-0 bottom-0   flex flex-col justify-around items-center  border-t-2 border-r-2 border-slate-800 ">
+                        <div className=" fixed  h-3/4 w-1/4 left-0 bottom-0   flex flex-col  border-t-2 items-center border-slate-800 ">
                             <Link
-                                className="hover:scale-125 w-full  tems-center flex justify-center items-center  h-full hover:border hover:border-slate-300"
+                                className=" w-full  tems-center flex justify-center items-center h-full hover:border hover:border-slate-300"
                                 href="https://instagram.com/christimbol">
                                 <InstagramMediaIcon />
                             </Link>
                             <Link
-                                className="hover:scale-125 w-full   items-center flex justify-center  h-full hover:border hover:border-slate-300"
+                                className="w-full   items-center flex justify-center  h-full hover:border hover:border-slate-300"
                                 href="https://www.linkedin.com/in/chris-timbol-906198144/">
                                 <LinkedInMediaIcon />
                             </Link>
                             <Link
-                                className="hover:scale-125 w-full   items-center flex justify-center  h-full hover:border hover:border-slate-300"
+                                className=" w-full   items-center flex justify-center  h-full hover:border hover:border-slate-300"
                                 href="https://github.com/ChrisTimbol">
                                 <GithubMediaIcon />
                             </Link>
 
                             <Link
-                                className="hover:scale-125 w-full   items-center flex justify-center  h-full hover:border hover:border-slate-300"
+                                className=" w-full   items-center flex justify-center  h-full hover:border hover:border-slate-300"
                                 href="mailto:christimbol707@gmail.com">
                                 <GmailMediaIcon />
                             </Link>
 
 
                         </div>
-                        <ul className='fixed bottom-0 right-0 w-3/4   h-3/4 flex flex-col justify-between border-t-2 border-slate-800'>
-                            <Link className="" onClick={closeMenu} href="/">
-                                <li className=' text-center text-4xl py-8 hover:border hover:border-slate-500 w-full transition duration-300 ease-in-out hover:bg-slate-300 hover:bg-opacity-25'>
+                        <ul className='fixed bottom-0 h-3/4 right-0 w-3/4 border-slate-800 flex flex-col justify-around border-t-2 border-l-2 '>
+                            <Link className="flex-grow" onClick={closeMenu} href="/">
+                                <li className='h-full text-4xl hover:border hover:border-slate-300 flex justify-center items-center w-full transition duration-300 ease-in-out hover:bg-slate-500 hover:bg-opacity-25'>
                                     Home
                                 </li>
                             </Link>
-                            <Link onClick={closeMenu} href="/who">
-                                <li className=' text-center text-4xl py-8  hover:border hover:border-slate-300 w-full transition duration-300 ease-in-out hover:bg-slate-300 hover:bg-opacity-25'>
+                            <Link className="flex-grow" onClick={closeMenu} href="/who">
+                            <li className='h-full text-4xl hover:border hover:border-slate-300 flex justify-center items-center w-full transition duration-300 ease-in-out hover:bg-slate-500 hover:bg-opacity-25'>
                                     Who
                                 </li>
                             </Link>
-                            <Link onClick={closeMenu} href="/blog">
-                                <li className=' text-center text-4xl py-8 hover:border hover:border-slate-300 w-full transition duration-300 ease-in-out hover:bg-slate-300 hover:bg-opacity-25'>
+                            <Link className="flex-grow" onClick={closeMenu} href="/blog">
+                            <li className='h-full text-4xl hover:border hover:border-slate-300 flex justify-center items-center w-full transition duration-300 ease-in-out hover:bg-slate-500 hover:bg-opacity-25'>
                                     Blog
                                 </li>
                             </Link>
-                            <Link onClick={closeMenu} href="/work">
-                                <li className=' text-center text-4xl py-8 hover:border hover:border-slate-300 w-full transition duration-300 ease-in-out hover:bg-slate-300 hover:bg-opacity-25'>
+                            <Link className="flex-grow" onClick={closeMenu} href="/work">
+                            <li className='h-full text-4xl hover:border hover:border-slate-300 flex justify-center items-center w-full transition duration-300 ease-in-out hover:bg-slate-500 hover:bg-opacity-25'>
                                     Work
                                 </li>
                             </Link>
                         </ul>
+
                     </nav>
 
 

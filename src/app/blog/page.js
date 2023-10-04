@@ -12,8 +12,8 @@ export default async function Blog() {
 
     return (
         <>
-            <div className="relative">
-                <Image src="aboutwav.svg" width={400} height={400} alt="About Wave" />
+            <div className="relative h-64">
+                <Image src="aboutwav.svg"  className="object-cover" fill  priority  alt="About Wave" />
             </div>
             <main className="min-h-screen px-4 h-full w-full space-y-16  bg-slate-950 text-slate-50 relative ">
                 <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold ">Blog</h2>

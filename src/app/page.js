@@ -16,13 +16,16 @@ export default async function Home() {
   return (
     <>
       <main className="">
-        <div className="relative">
-          <Image src="aboutwav.svg" width={400} height={400} alt="About Wave" />
+        <div className="relative h-64 w-full">
+          <Image src="newWave.svg" className="object-cover" fill priority alt="About Wave" />
         </div>
         <section className="px-4 space-y-12 bg-slate-950   pb-12">
 
-        <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold ">Latest Post</h2>
+          <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold ">Latest Post</h2>
+          
           <PostLoop posts={posts} />
+
+
           <Link className="text-cyan-50 flex justify-end  font-semibold w-full border border-cyan-500 rounded-lg p-4 hover:text-cyan-400" href="/blog">
             Read More <BlogLink />
           </Link>
