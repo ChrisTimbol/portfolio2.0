@@ -5,18 +5,14 @@ import Link from 'next/link'
 export default function Who() {
     return (
         <>
-            {/*             <div className=" h-64" >
-                <Image src="aboutwav.svg" className="object-cover" fill priority alt="About Wave" />
+            <main className="flex justify-center  w-full md:h-screen  bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-slate-50  ">
 
-            </div> */}
-            <main className="flex flex-col items-center overflow-hidden  w-full h-screen  bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-slate-50 relative ">
+                <section className="max-w-screen-xl flex flex-col items-center py-16 ">
+                    <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold py-16 px-4 border border-slate-700 w-full">About</h2>
+                   
+                    <div className="flex flex-wrap  bg-gradient-to-b from-cyan-950 via-cyan-900 rounded-lg">
 
-                <section className="max-w-screen-xl h-screen">
-                    <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold p-8 ">About</h2>
-
-                    <div className="flex  bg-gradient-to-b from-cyan-950  via-cyan-900 rounded-lg">
-
-                        <div className="relative  w-1/2  rounded-full  relative bg-gradient-to-b from-cyan-900 via-slate-900 to-cyan-400 transform transition-transform duration-300 hover:scale-105 overflow-hidden " >
+                        <div className="relative w-full h-[100vw] md:h-auto md:w-1/2   rounded-large  relative bg-gradient-to-b from-cyan-800 via-slate-950 to-slate-900 transform transition-transform duration-300 " >
                             <Image
                                 src="BlobActualFace.svg"
                                 alt="avatar image"
@@ -24,10 +20,9 @@ export default function Who() {
                                 sizes="(max-width: 640px) 50vw, (max-width: 768px) 80vw, 1200px"
                                 className="rounded-full"
                             />
-
                         </div>
 
-                        <div className="  w-1/2 h-full flex flex-col items-center justify-center text-base md:text-lg text-center md:text space-y-4  ">
+                        <div className="md:w-1/2 flex flex-col bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 to-cyan-950 items-center justify-center text-base md:text-lg text-center md:text space-y-4 p-8">
                             <CodeBrackets />
                             <p className="about-paragraph group  ">
                                 Hi, I'm{' '}
