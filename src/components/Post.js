@@ -28,19 +28,20 @@ export default function Post({ date, excerpt, thumbnail, title, category, slug }
   const truncatedExcerpt = truncateExcerpt(excerpt, 50);
 
   return (
-    <article className="cursor-pointer p-4  overflow-hidden h-full bg-slate-900 rounded-lg transition duration-300 hover:shadow-xl">
+    <article className="group cursor-pointer p-4  overflow-hidden h-full p-4 bg-slate-900 rounded-lg shadow-sm hover:shadow-cyan-400 transition duration-300 hover:shadow-xl">
       <Link href={slug} className="">
 
-        <h2 className="text-2xl text-slate-50  font-bold font-robotoSerif ">
+
+        <h2 className="group-hover:text-cyan-400 text-2xl text-slate-50  font-bold font-robotoSerif ">
           {title || 'No Title'}
         </h2>
 
         {formattedDate && (
           <div className="flex space-x-2 my-1 sm:mb-4 lg:mb-6">
             <span className="text-sm text-slate-600 rounded-full">{formattedDate}</span>
-            {/*   {category && ( */}
-            <span className="text-xs text-slate-50  my-1 bg-slate-600  rounded-full">{category} </span>
-            {/*    )} */}
+            {category && (
+              <span className="text-xs text-slate-50  my-1 bg-slate-600  rounded-full">{category} </span>
+            )}
           </div>
         )}
 
@@ -57,13 +58,13 @@ export default function Post({ date, excerpt, thumbnail, title, category, slug }
               />
             </div>
           )}
-         {/*  {!thumbnail && ( */}
-            <div
-              className={`font-roboto  w-full h-full text-slate-100  line-clamp-4 overflow-hidden `}
-              dangerouslySetInnerHTML={{ __html: truncatedExcerpt }}
-            />
+          {/*  {!thumbnail && ( */}
+          <div
+            className={`font-roboto  w-full h-full text-slate-100  line-clamp-4 overflow-hidden `}
+            dangerouslySetInnerHTML={{ __html: truncatedExcerpt }}
+          />
 
-      {/*     )} */}
+          {/*     )} */}
 
 
         </div>

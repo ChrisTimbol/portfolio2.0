@@ -21,9 +21,9 @@ export default async function Home() {
         </div>
         <section className="px-4 space-y-12 bg-slate-950   pb-12">
 
-          <h2 className="text-4xl text-cyan-400 font-robotoSerif font-semibold ">Latest Post</h2>
+        <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold ">Latest Post</h2>
           <PostLoop posts={posts} />
-          <Link className="text-cyan-50 flex justify-end  font-semibold w-full border border-cyan-500 rounded-lg p-4" href="/blog">
+          <Link className="text-cyan-50 flex justify-end  font-semibold w-full border border-cyan-500 rounded-lg p-4 hover:text-cyan-400" href="/blog">
             Read More <BlogLink />
           </Link>
 

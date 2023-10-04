@@ -18,7 +18,7 @@ export default function Project({ title, description, github, website, thumbnail
             </div>
             <div className="py-2">
                 {title && (
-                    <h2 className="text-2xl px-4 text-center text-slate-50 font-semibold font-robotoSerif  mb-2 ">
+                    <h2 className=" group-hover:text-cyan-400 text-2xl px-4 text-center text-slate-50 font-semibold font-robotoSerif  mb-2 ">
                         {title}
                     </h2>
                 )}

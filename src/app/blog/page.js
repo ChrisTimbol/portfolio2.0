@@ -15,8 +15,8 @@ export default async function Blog() {
             <div className="relative">
                 <Image src="aboutwav.svg" width={400} height={400} alt="About Wave" />
             </div>
-            <main className="min-h-screen p-4 h-full w-full space-y-16  bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-slate-50 relative ">
-                <h2 className="text-4xl text-cyan-400 font-robotoSerif font-semibold ">Blog</h2>
+            <main className="min-h-screen px-4 h-full w-full space-y-16  bg-slate-950 text-slate-50 relative ">
+                <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold ">Blog</h2>
 
                 <ul className="space-y-4">
                     {posts.map((post) => (
@@ -30,6 +30,7 @@ export default async function Blog() {
                     ))}
                 </ul>
             </main>
+            
         </>
 
     )

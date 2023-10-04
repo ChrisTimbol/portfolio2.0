@@ -9,8 +9,8 @@ export default function Who() {
                 <Image src="aboutwav.svg" width={400} height={400} alt="About Wave" />
 
             </div>
-            <main className="p-4 h-full w-full space-y-16  bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-slate-50 relative ">
-                <h2 className="text-4xl text-cyan-400 font-robotoSerif font-semibold">Who</h2>
+            <main className="px-4 h-full w-full space-y-16  bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-slate-50 relative ">
+            <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold ">Who</h2>
 
 
                 <div className="group shadow-2xl h-max rounded-full  mx-auto overflow-hidden relative ">
