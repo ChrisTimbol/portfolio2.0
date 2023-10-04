@@ -3,7 +3,7 @@ import { GithubMediaIcon, ExternalLinkIcon } from '@/components/Icons'
 import Link from 'next/link'
 export default function Project({ title, description, github, website, thumbnail }) {
     return (
-        <div className="cursor-pointer overflow-hidden w-full h-full p-4 bg-cyan-950 rounded-lg shadow-md hover:shadow-cyan-900 shadow-cyan-950 transition duration-300 hover:shadow-2xl relative">
+        <div className="overflow-hidden w-full h-full p-4 bg-cyan-950 rounded-lg shadow-md shadow-cyan-950 transition duration-300 hover:shadow-2xl relative">
             <div className="h-60 w-full relative ">
                 {thumbnail && (
                     <Image
@@ -30,12 +30,12 @@ export default function Project({ title, description, github, website, thumbnail
 
                 <div className="flex w-full justify-between ">
                     {github && (
-                        <Link href={github} className="cursor-pointer hover:text-cyan-300">
+                        <Link href={github} className="cursor-pointer hover:text-cyan-500">
                             <GithubMediaIcon />
                         </Link>
                     )}
                     {website && (
-                        <Link href={website} className="cursor-pointer hover:text-cyan-300">
+                        <Link href={website} className="cursor-pointer hover:text-cyan-500">
                             <ExternalLinkIcon />
                         </Link>
                     )}
