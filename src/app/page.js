@@ -15,15 +15,15 @@ export default async function Home() {
   const categories = await fetchData('http://portfoliosite.local/wp-json/wp/v2/categories', { next: { revalidate: false | 0 | 10 } })
   return (
     <>
-      <main className=" h-full w-full  bg-gradient-to-b from-cyan-600 via-cyan-900 to-cyan-600 text-cyan-50 relative ">
+      <main className="">
         <div className="relative">
           <Image src="aboutwav.svg" width={400} height={400} alt="About Wave" />
         </div>
-        <section className="p-4 space-y-12 bg-gradient-to-b from-cyan-800 via-cyan-900 to-cyan-800   ">
+        <section className="px-4 space-y-12 bg-slate-950   ">
 
-          <h2 className="text-4xl text-rose-500 font-robotoSerif font-semibold ">Latest Post</h2>
+          <h2 className="text-4xl text-cyan-400 font-robotoSerif font-semibold ">Latest Post</h2>
           <PostLoop posts={posts} />
-          <Link className="text-cyan-100 flex justify-end  font-semibold w-full border border-cyan-500 rounded-lg p-4" href="/blog">
+          <Link className="text-cyan-50 flex justify-end  font-semibold w-full border border-cyan-500 rounded-lg p-4" href="/blog">
             Read More <BlogLink />
           </Link>
 

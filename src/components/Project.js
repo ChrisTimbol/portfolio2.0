@@ -3,7 +3,7 @@ import { GithubMediaIcon, ExternalLinkIcon } from '@/components/Icons'
 import Link from 'next/link'
 export default function Project({ title, description, github, website, thumbnail }) {
     return (
-        <div className="overflow-hidden w-full h-full p-4 bg-cyan-950 rounded-lg shadow-md shadow-cyan-950 transition duration-300 hover:shadow-2xl relative">
+        <div className="overflow-hidden w-full h-full p-4 bg-slate-950 rounded-lg shadow-md shadow-cyan-900 transition duration-300 hover:shadow-2xl relative">
             <div className="h-60 w-full relative ">
                 {thumbnail && (
                     <Image
@@ -18,24 +18,24 @@ export default function Project({ title, description, github, website, thumbnail
             </div>
             <div className="py-2">
                 {title && (
-                    <h2 className="text-lg text-center text-cyan-50 font-bold font-robotoSerif mb-2 leading-relaxed">
+                    <h2 className="text-lg text-center text-slate-50 font-bold font-robotoSerif mb-2 leading-relaxed">
                         {title}
                     </h2>
                 )}
                 {description && (
-                    <p className="font-roboto text-sm text-cyan-100 mb-4 leading-6">{description}</p>
+                    <p className="font-roboto text-sm text-slate-100 mb-4 leading-6">{description}</p>
                 )}
             </div>
             {github || website ? (
 
                 <div className="flex w-full justify-between ">
                     {github && (
-                        <Link href={github} className="cursor-pointer hover:text-cyan-500">
+                        <Link href={github} className="cursor-pointer hover:text-cyan-400">
                             <GithubMediaIcon />
                         </Link>
                     )}
                     {website && (
-                        <Link href={website} className="cursor-pointer hover:text-cyan-500">
+                        <Link href={website} className="cursor-pointer hover:text-cyan-400">
                             <ExternalLinkIcon />
                         </Link>
                     )}
