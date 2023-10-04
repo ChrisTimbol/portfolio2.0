@@ -14,9 +14,6 @@ export default async function Home() {
   return (
     <>
       <main className=" h-full w-full  bg-gradient-to-b from-cyan-600 via-cyan-900 to-cyan-600 text-cyan-50 relative ">
-        <div className="relative">
-          <Image src="aboutwav.svg" width={400} height={400} alt="About Wave" />
-        </div>
         <Blog posts={posts} />
       </main>
     </>

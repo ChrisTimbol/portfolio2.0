@@ -34,8 +34,8 @@ export default function Header() {
           className="text-2xs z-30 font-robotoSerif tracking-wide antialiased tracking-tighter transition-opacity duration-500 ease-in-out hover:opacity-75"
           href="/"
         >
-          <span className="font-semibold text-xxxs ">TIMBOL</span>
-          <span className="bg-teal-800 font-black text-white text-xxxxs">.DEV</span>
+          <span className="font-semibold text-white text-xxxs ">TIMBOL</span>
+          <span className="bg-cyan-900 text-white text-xxxxs">.DEV</span>
         </Link>
         <Navbar showHamburger={isNavbarVisible} />
       </div>
