@@ -4,7 +4,7 @@ import { GithubMediaIcon, LinkedInMediaIcon, GmailMediaIcon, InstagramMediaIcon 
 export default function Footer() {
     return (
         <footer className="text-white bg-slate-900 flex flex-col justify-center text-center  pt-8 ">
-            <h4 className="underline decoration-cyan-400 decoration-2 underline-offset-4 text-sm">Thanks for reading! </h4>
+            <h4 className="underline decoration-cyan-400 decoration-2 underline-offset-4 text-sm md:text-md lg:text-lg">Thanks for reading! </h4>
 
             <div className="flex justify-center items-center space-x-2 py-4   ">
 
@@ -31,8 +31,8 @@ export default function Footer() {
                 </Link>
 
             </div>
-            <Link className="hover:text-teal-200 cursor-pointer text-sm " href="/privacy-policy">Privacy Policy</Link>
-            <p className="text-sm pb-1">Copyright © 2023. All rights reserved.</p>
+            <Link className="hover:text-teal-200 cursor-pointer text-sm  md:text-md " href="/privacy-policy">Privacy Policy</Link>
+            <p className="text-sm pb-1 md:text-md ">Copyright © 2023. All rights reserved.</p>
 
         </footer>
     );

@@ -12,25 +12,18 @@ export default async function Blog() {
 
     return (
         <>
-            <div className="relative h-64">
-                <Image src="aboutwav.svg"  className="object-cover" fill  priority  alt="About Wave" />
+            <div className="relative h-64 w-full">
+                <Image src="newWave.svg" className="object-cover" fill priority alt="About Wave" />
             </div>
-            <main className="min-h-screen px-4 h-full w-full space-y-16  bg-slate-950 text-slate-50 relative ">
-                <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold ">Blog</h2>
+            <main className="min-h-screen flex justify-center px-4 h-full w-full space-y-16  bg-slate-950 text-slate-50 relative ">
+                <section className="px-4 max-w-screen-xl space-y-12 bg-slate-950 pb-12  w-full flex flex-col items-center justify-center ">
 
-                <ul className="space-y-4">
-                    {posts.map((post) => (
-                        <li className="" key={post?.id}>
-                            <Post
-                                title={post?.title?.rendered}
-                                slug={post?.slug}
-                                date={post?.date}
-                            />
-                        </li>
-                    ))}
-                </ul>
+                <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold text-center p-8">Latest Post</h2>
+                                    <PostLoop posts={posts} />
+
+                </section>
             </main>
-            
+
         </>
 
     )

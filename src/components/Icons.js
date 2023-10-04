@@ -126,7 +126,7 @@ export const BlogLink = () => (
 export const GithubMediaIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-6 w-6"
+    className="h-6 w-6 md:h-8  lg:w-10"
     fill="currentColor"
     viewBox="0 0 24 24"
   >
@@ -137,14 +137,14 @@ export const GithubMediaIcon = () => (
 
 )
 export const LinkedInMediaIcon = () => (
-  <svg className="w-6 h-8 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 15">
+  <svg className="w-6 h-8  md:w-8  lg:h-10 lg:w-12text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 15">
     <path fillRule="evenodd" d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" clipRule="evenodd" />
     <path d="M3 5.012H0V15h3V5.012Z" />
   </svg>
 );
 
 export const GmailMediaIcon = () => (
-  <svg className="w-6 h-6 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 19">
+  <svg className="w-6 h-6  md:w-8  lg:h-10  text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 19">
     <path fillRule="evenodd" d="M8.842 18.083a8.8 8.8 0 0 1-8.65-8.948 8.841 8.841 0 0 1 8.8-8.652h.153a8.464 8.464 0 0 1 5.7 2.257l-2.193 2.038A5.27 5.27 0 0 0 9.09 3.4a5.882 5.882 0 0 0-.2 11.76h.124a5.091 5.091 0 0 0 5.248-4.057L14.3 11H9V8h8.34c.066.543.095 1.09.088 1.636-.086 5.053-3.463 8.449-8.4 8.449l-.186-.002Z" clipRule="evenodd" />
   </svg>
 );
@@ -152,7 +152,7 @@ export const GmailMediaIcon = () => (
 export const InstagramMediaIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-6 w-6"
+    className="h-6 w-6  md:w-8  lg:h-10 "
     fill="currentColor"
     viewBox="0 0 24 24"
   >
@@ -190,7 +190,7 @@ export const ArrowIcon = () => {
 };
 
 export const ExternalLinkIcon = () => (
-  <svg className="w-6 h-6 text-cyan-50 hover:text-cyan-300 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+  <svg className="w-6 h-6 text-cyan-50 md:h-8  lg:w-10  hover:text-cyan-300 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
   </svg>
 );

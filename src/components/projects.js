@@ -52,22 +52,18 @@ export const projects = [
     {
         title: `Netflix Clone: 
         Movie Catalog Web App`,
-        description: `Built using NextJS, TailwindCSS, and MovieDB API, 
-                    this app allows users to view and like movies, 
-                    adding them to their favorites list. 
-                    Focus on user authentication, seamless navigation, 
-                    and responsive design.`,
+        description: `Built with NextJS, TailwindCSS, and MovieDB API. Users can view and like movies, adding them to favorites. Focus on authentication, navigation, and responsive design.`,
+
+
         thumbnail: '/projectImages/Netflix.png',
         github: `https://github.com/ChrisTimbol/NetflixClone`,
         website: `https://chrisnetflixclone.vercel.app/`,
     },
     {
         title: `Shopper Cart`,
-        description: `This e-commerce prototype showcases a responsive 
-                    and user-friendly online shopping experience. It utilizes 
-                    React and JavaScript, ensuring dynamic URL generation and global
-                    state management via the Context API. Powered by Next.js, the 
-                    app seamlessly integrates with a fake store API for product data.`,
+        description: `Responsive e-commerce prototype using React, JavaScript, and Next.js. Dynamic URL generation, state management via Context API. Powered by a fake store API for product data.`,
+
+
         thumbnail: '/projectImages/Netflix.png',
         github: `https://github.com/ChrisTimbol/shopper-cart`,
         website: `https://shopper-cart.vercel.app/`,
