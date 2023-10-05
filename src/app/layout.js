@@ -38,6 +38,10 @@ export default function RootLayout({ children }) {
       <body className="font-roboto">
 
         <Header />
+        <div className="py-16 bg-slate-800 text-white flex flex-col items-center justify-center">
+          <h1 className="text-5xl font-bold mb-4 text-center">Headline</h1>
+          <p className="text-xl text-center mb-8 max-w-md">Description</p>
+        </div>
         {children}
         <Gotopbutton /> 
         <Footer />

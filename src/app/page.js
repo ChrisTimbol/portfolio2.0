@@ -3,7 +3,7 @@ import PostLoop from '@/components/PostLoop'
 import Image from 'next/image'
 import Link from 'next/link'
 import { BlogLink } from '@/components/Icons';
-
+import Sidebar from '@/components/Sidebar'
 export default async function Home() {
   function getTimestamp() {
     return new Date().getTime();
@@ -15,19 +15,24 @@ export default async function Home() {
 
   return (
     <>
-      <main className="flex flex-col items-center w-full h-full  bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-slate-50  ">
+      <main className="flex justify-center bg-gradient-to-b w-full h-full from-slate-950 via-slate-900 to-slate-900 text-slate-50">
 
-        <section className="w-full h-full min-h-screen max-w-screen-xl  py-16  ">
-          <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold py-16 px-4 border border-slate-700 w-full">Latest Post</h2>
-          <PostLoop posts={posts} />
+        <section className="flex flex-wrap  w-full justify-center h-full min-h-screen max-w-screen-lg  py-16  ">
+          <div className="w-full lg:w-2/3 px-4">
+            <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold py-16 px-4 border border-slate-700 w-full">Latest Post</h2>
 
-     
+            <PostLoop posts={posts} />
+          </div>
 
-   
+          <div className="w-full lg:w-1/3 h-full p-4">
+            <Sidebar />
+          </div>
+
         </section>
-        <Link className="text-cyan-50 p-4 border-2 font-semibold items-center justify-center   rounded-lg  my-16  hover:text-cyan-400 text-lg  md:text-xl  " href="/blog">
+
+        {/*         <Link className="text-cyan-50 p-4 border-2 font-semibold items-center justify-center   rounded-lg  my-16  hover:text-cyan-400 text-lg  md:text-xl  " href="/blog">
             Read More  <BlogLink />
-          </Link>
+          </Link> */}
       </main>
     </>
   )

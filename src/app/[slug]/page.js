@@ -1,5 +1,5 @@
 import fetchData from '@/components/Api';
-import Image from 'next/image'
+import Sidebar from '@/components/Sidebar'
 function getTimestamp() {
   return new Date().getTime();
 }
@@ -25,23 +25,21 @@ export default async function Page({ params }) {
 
   return (
     <>
-            <main className="min-h-screen p-4 h-full w-full space-y-16  bg-slate-950 text-slate-50 relative ">
-        <ul className="">
+      <main className="flex justify-center items-center w-full h-full  bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-slate-50  ">
+        <section className="flex justify-center w-3/4 py-16 h-full min-h-screen max-w-screen-md  py-16  ">
+
           {postData.map((data) => (
-
-            <li key={data?.id} className="mb-8 border-b border-gray-300 pb-4">
-
-              <h1 className="text-2xl font-bold mb-2">{data?.title?.rendered}</h1>
-              <div
-                className="text- font-roboto "
-                dangerouslySetInnerHTML={{ __html: data?.content?.rendered }}
-              />
-            </li>
-
+            <div key={data?.id} className="w-full mb-8 border-b border-gray-300 pb-4">
+              <h1 className="text-4xl md:text-5xl text-center text-slate-100  font-robotoSerif font-semibold py-6 w-full">
+                {data?.title?.rendered}
+              </h1>
+              <div className="prose prose-lg prose-slate max-w-none mt-6" dangerouslySetInnerHTML={{ __html: data?.content?.rendered }} />
+            </div>
           ))}
-        </ul>
+{/* 
+          <Sidebar /> */}
+        </section>
       </main>
-
     </>
   );
 }
