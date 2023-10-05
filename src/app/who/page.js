@@ -7,7 +7,7 @@ export default function Who() {
         <>
       <main className="flex justify-center  w-full h-full md:h-screen  bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-slate-50  ">
 
-<section className=" w-full h-full max-w-screen-xl flex flex-col items-center py-16 p-4 ">
+<section className=" w-full h-full max-w-screen-xl flex flex-col items-center py-16 ">
   <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold py-16 px-4 border border-slate-600 w-full">Who I Am</h2>
 
 
@@ -23,7 +23,7 @@ export default function Who() {
                             />
                         </div>
 
-                        <div className="md:w-1/2 flex flex-col bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 to-cyan-950 items-center justify-center text-base md:text-lg text-center md:text space-y-4 p-8">
+                        <div className="p-4 md:w-1/2 flex flex-col bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 to-cyan-950 items-center justify-center text-base md:text-lg text-center md:text space-y-4 ">
                             <CodeBrackets />
                             <p className="about-paragraph group  ">
                                 Hi, I'm{' '}
@@ -45,7 +45,7 @@ export default function Who() {
                                 adding my own touch to their digital experiences.
                             </p>
                             <RocketIcon />
-                            <p className="about-paragraph px-8">
+                            <p className="about-paragraph">
                                 I excel in <span className="text-gradient">React and Tailwind</span>, ensuring fast and elegant web
                                 solutions. My expertise extends to creating custom WordPress themes and plugins, delivering pixel-perfect
                                 designs and intuitive interfaces.

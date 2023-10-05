@@ -28,9 +28,9 @@ export default function Post({ date, excerpt, thumbnail, title, category, slug }
   const truncatedExcerpt = truncateExcerpt(excerpt, 50);
 
   return (
-    <article className="h-60 max-w-sm group cursor-pointer overflow-hidden mx-4  mt-4 p-4 bg-slate-800 rounded-lg shadow-sm hover:shadow-cyan-400 transition duration-300 hover:shadow-xl">
+    <article className="h-60 max-w-sm group cursor-pointer overflow-hidden mx-4  mt-4 p-4 bg-slate-800 rounded-lg shadow-sm  transition duration-300 hover:shadow-2xl">
+      
       <Link href={slug} className="">
-
 
         <h2 className="group-hover:text-cyan-400 text-2xl text-slate-50  font-bold font-robotoSerif ">
           {title || 'No Title'}
@@ -58,16 +58,13 @@ export default function Post({ date, excerpt, thumbnail, title, category, slug }
               />
             </div>
           )}
-          {/*  {!thumbnail && ( */}
+
           <div
             className={`font-roboto  w-full h-full text-slate-100  line-clamp-4 overflow-hidden `}
             dangerouslySetInnerHTML={{ __html: truncatedExcerpt }}
           />
-
-          {/*     )} */}
-
-
         </div>
+
       </Link>
     </article>
   );
