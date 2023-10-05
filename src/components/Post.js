@@ -28,7 +28,7 @@ export default function Post({ date, excerpt, thumbnail, title, category, slug }
   const truncatedExcerpt = truncateExcerpt(excerpt, 50);
 
   return (
-    <article className="h-60 max-w-sm group cursor-pointer p-4  overflow-hidden  p-4 bg-slate-800 rounded-lg shadow-sm hover:shadow-cyan-400 transition duration-300 hover:shadow-xl">
+    <article className="h-60 max-w-sm group cursor-pointer overflow-hidden mx-4  mt-4 p-4 bg-slate-800 rounded-lg shadow-sm hover:shadow-cyan-400 transition duration-300 hover:shadow-xl">
       <Link href={slug} className="">
 
 

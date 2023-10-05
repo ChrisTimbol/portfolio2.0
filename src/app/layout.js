@@ -40,8 +40,8 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Gotopbutton /> 
-        <Footer />
-      </body>
+{/*         <Footer />
+ */}      </body>
     </html>
   )
 }
