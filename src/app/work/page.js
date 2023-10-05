@@ -21,7 +21,7 @@ export default function Work() {
 <section className="max-w-screen-xl min-h-screen flex flex-col items-center py-16 ">
     <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold py-16 p-4 border border-slate-700 w-full">Work </h2>
    
-        <div className="max-w-screen-xl grid grid-cols-1   md:grid-cols-2 lg:grid-cols-3 gap-8 py-12 px-4 max-w-screen-l ">
+        <div className=" grid grid-cols-1   md:grid-cols-2 lg:grid-cols-3 gap-8 p-4 ">
                     {projects.map((project, index) => (
                         <div key={index} ref={(el) => (projectRefs.current[index] = el)}>
                             <Project title={project.title} thumbnail={project.thumbnail} description={project.description} github={project.github} website={project.website} />

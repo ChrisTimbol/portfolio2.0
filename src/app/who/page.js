@@ -7,7 +7,7 @@ export default function Who() {
         <>
       <main className="flex justify-center  w-full h-full md:h-screen  bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-slate-50  ">
 
-<section className=" w-full h-full max-w-screen-xl flex flex-col items-center py-16 ">
+<section className=" w-full h-full max-w-screen-xl flex flex-col items-center py-16 p-4 ">
   <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold py-16 px-4 border border-slate-600 w-full">Who I Am</h2>
 
 
