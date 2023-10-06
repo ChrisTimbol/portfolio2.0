@@ -1,34 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-
-const formatDate = (dateString) => {
-  if (dateString) {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' };
-    return new Date(dateString).toLocaleDateString('en-US', options);
-  }
-  return '';
-};
-
-const truncateExcerpt = (text, wordLimit) => {
-  if (text) {
-    const words = text.split(' ');
-    if (words.length > wordLimit) {
-      const truncatedText = words.slice(0, wordLimit).join(' ');
-      return truncatedText /* + '...'; */
-    } else {
-      return text;
-    }
-  }
-  return '';
-};
+import {FormatDate} from '@/components/FormatDate'
 
 export default function Post({ date, excerpt, thumbnail, title, category, slug }) {
-  const formattedDate = formatDate(date);
-  const truncatedExcerpt = truncateExcerpt(excerpt, 50);
-
+  const formattedDate = FormatDate(date);
   return (
-    <article className="h-60 md:h-72 lg:h-80 group cursor-pointer overflow-hidden  mt-4 p-4 bg-slate-800 rounded-lg shadow-sm transition duration-300 hover:shadow-2xl">
+    <article className="h-60 md:h-72  group cursor-pointer overflow-hidden  mt-4 p-4 bg-slate-800 rounded-lg shadow-sm transition duration-300 hover:shadow-2xl">
       
       <Link href={slug} className="">
 
@@ -61,7 +39,7 @@ export default function Post({ date, excerpt, thumbnail, title, category, slug }
 
           <div
             className={`font-roboto  w-full h-full text-slate-100  line-clamp-4  leading-7 prose  lg:line-clamp-8 overflow-hidden `}
-            dangerouslySetInnerHTML={{ __html: truncatedExcerpt }}
+            dangerouslySetInnerHTML={{ __html: excerpt }}
           />
         </div>
 
