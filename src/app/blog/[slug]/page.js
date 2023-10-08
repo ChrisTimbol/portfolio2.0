@@ -30,7 +30,7 @@ export default async function Page({ params }) {
 
           {postData.map((data) => (
             <div key={data?.id} className="w-full mb-8 border-b border-gray-300 pb-4">
-              <h1 className="text-4xl md:text-5xl text-center text-slate-100  font-robotoSerif font-semibold py-6 w-full">
+              <h1 className="text-5xl md:text-5xl text-center text-slate-100  font-robotoSerif font-semibold py-6 w-full">
                 {data?.title?.rendered}
               </h1>
               <div className="prose prose-xl prose-slate max-w-none mt-6" dangerouslySetInnerHTML={{ __html: data?.content?.rendered }} />

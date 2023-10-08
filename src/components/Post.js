@@ -21,7 +21,7 @@ export default function Post({ date, excerpt, thumbnail, title, category, slug }
 
   return (
     <article className=" md:h-72 group cursor-pointer overflow-hidden mt-4 p-4 bg-slate-800 rounded-lg shadow-sm transition duration-300 hover:shadow-2xl">
-      <Link href={slug}>
+      <Link href={`/blog/${slug}`}>
 
         <h2 className="group-hover:text-cyan-400 text-2xl text-slate-50 font-bold font-robotoSerif">
           {title || 'No Title'}
