@@ -21,7 +21,7 @@ export default function Work() {
 <section className="max-w-screen-xl min-h-screen flex flex-col items-center ">
     <h2 className="text-5xl text-cyan-400  font-robotoSerif font-semibold p-4 border border-black w-full">Work </h2>
    
-        <div className=" grid grid-cols-1   md:grid-cols-2 lg:grid-cols-3 gap-8 pb-4 px-4 ">
+        <div className=" grid grid-cols-1   md:grid-cols-2 lg:grid-cols-3 gap-4 pb-4 px-4 ">
                     {projects.map((project, index) => (
                         <div key={index} ref={(el) => (projectRefs.current[index] = el)}>
                             <Project title={project.title} thumbnail={project.thumbnail} description={project.description} github={project.github} website={project.website} />
