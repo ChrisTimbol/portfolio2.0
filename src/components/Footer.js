@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { GithubMediaIcon, LinkedInMediaIcon, GmailMediaIcon, InstagramMediaIcon } from './Icons';
 export default function Footer() {
     return (
-        <footer className="text-white bg-slate-900 flex flex-col justify-center text-center  border-t-2 border-slate-700 pt-8 ">
+        <footer className="text-white bg-slate-900 flex flex-col justify-center text-center  border-t-2 border-slate-700  ">
             <h4 className="underline decoration-cyan-400 decoration-2 underline-offset-4 text-sm md:text-md lg:text-lg">Thanks for reading! </h4>
 
             <div className="flex justify-center items-center space-x-2 py-4   ">

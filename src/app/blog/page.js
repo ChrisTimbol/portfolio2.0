@@ -14,18 +14,18 @@ export default async function Blog() {
     return (
         <>
             <main className="flex justify-center w-full h-full md:h-screen  bg-gradient-to-b from-slate-950 via-slate-950 to-slate-950 text-slate-50  ">
-                <section className=" w-full md:min-h-screen h-full min-h-screen max-w-screen-xl flex flex-col items-center py-16 ">
+                <section className=" w-full md:min-h-screen h-full min-h-screen max-w-screen-xl ">
                     <h2 className="text-5xl  text-cyan-400 font-robotoSerif font-semibold py-16 px-4 border border-slate-700  w-full">Blog</h2>
-                    <ul className="list-none w-full   ">
+                    <ul className="list-none w-full ">
                         {posts.map(post => (
-                            <Link href={post.slug} className=" ">
-                                <li className="p-4 group cursor-pointer" key={post.id}>
+                            <li className="p-4 group cursor-pointer h-full w-full" key={post.id}>
+                                <Link href={post.slug} className=" ">
                                     <h2 className="group-hover:text-cyan-300  text-xl text-slate-50 font-bold font-robotoSerif">
                                         {post.title.rendered || 'No Title'}
                                     </h2>
                                     <span className="text-sm text-slate-600 rounded-full">{FormatDate(post.date)}</span>
-                                </li>
-                            </Link>
+                                </Link>
+                            </li>
                         ))}
                     </ul>
                 </section>
