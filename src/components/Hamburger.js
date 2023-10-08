@@ -1,56 +1,26 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-export default function Hamburger(props) {
+const Hamburger = ({ onClick }) => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggleOpen = () => {
-        setIsOpen(!isOpen); /* sets inverse  */
+    const handleClick = () => {
+        setIsOpen(!isOpen);
+        onClick(); // Call the onClick function passed as a prop
     };
 
-    // Use useEffect to listen for changes in props.closeMenu
-    // alternatively could move useState to navbar
-    useEffect(() => {
-        if (props.closeMenu === false) {
-            setIsOpen(false); // Reset the hamburger when closeMenu is false
-        }
-    }, [props.closeMenu]);
-
     return (
-        <>
-            <button className="transition-opacity duration-500 ease-in-out hover:opacity-75 p-4 "  onClick={toggleOpen}>
-                {isOpen ? (
-                    <>
-                        <div
-                            className={`bg-cyan-50  block transition-all duration-300 ease-out h-0.5 w-6 md:h-1 md:w-8 md:my-1 rounded-sm 
-                  ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}
-                        ></div>
-                        <span
-                            className={`bg-cyan-50  block transition-all duration-300 ease-out h-0.5 w-6 md:h-1 md:w-8 md:my-1 rounded-sm my-0.5 
-                  ${isOpen ? 'opacity-0' : 'opacity-100'}`}
-                        ></span>
-                        <span
-                            className={`bg-cyan-50  block transition-all duration-300 ease-out h-0.5 w-6 md:h-1 md:w-8 md:my-1 rounded-sm 
-                  ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}
-                        ></span>
-                    </>
-                ) : (
-                    <>
-                        <div
-                            className={`bg-cyan-50  block transition-all duration-300 ease-out h-0.5 w-6 md:h-1  md:w-7 md:my-1 rounded-sm 
-                      ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'}`}
-                        ></div>
-                        <span
-                            className={`bg-slate-50  block transition-all duration-300 ease-out h-0.5 w-6 md:h-1  md:w-7 md:my-1 rounded-sm my-0.5 
-                      ${isOpen ? 'opacity-0' : 'opacity-100'}`}
-                        ></span>
-                        <span
-                            className={`bg-cyan-50 block transition-all duration-300 ease-out h-0.5 w-6 md:h-1  md:w-7 md:my-1  rounded-sm 
-                      ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'}`}
-                        ></span>
-                    </>
-                )}
+        <div className="p-4">
+            <button
+                className="text-white focus:outline-none"
+                onClick={handleClick}
+            >
+                <div className={`h-0.5 w-6 mb-1 bg-white transition-transform duration-300 transform ${isOpen ? 'rotate-45 translate-y-1.5' : ''}`} />
+                <div className={`h-0.5 w-6 my-1 bg-white transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''}`} />
+                <div className={`h-0.5 w-6 mt-1 bg-white transition-transform duration-300 transform ${isOpen ? '-rotate-45 -translate-y-1.5' : ''}`} />
             </button>
-        </>
+        </div>
     );
-}
+};
+
+export default Hamburger;
