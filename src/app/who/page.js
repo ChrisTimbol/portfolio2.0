@@ -7,11 +7,11 @@ export default function Who() {
         <>
       <main className="flex justify-center  w-full h-full  bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-slate-50   ">
 
-<section className=" w-full h-full md:min-h-screen  max-w-screen-xl flex flex-col items-center py-16 ">
-  <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold py-16 px-4 border border-slate-600 w-full ">Who I Am</h2>
+<section className=" w-full h-full md:min-h-screen  max-w-screen-xl flex flex-col items-center ">
+  <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold p-4  w-full ">Who I Am</h2>
 
 
-                    <div className="flex flex-wrap rounded-lg p-4">
+                    <div className="flex flex-wrap rounded-lg px-4">
 
                         <div className="relative w-full rounded-lg   h-[100vw] md:h-auto md:w-1/2   rounded-large  relative bg-gradient-to-b from-cyan-800 via-slate-950 to-slate-900 transform transition-transform duration-300 " >
                             <Image
