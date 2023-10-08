@@ -11,9 +11,9 @@ export default function Who() {
   <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold p-4  w-full ">Who I Am</h2>
 
 
-                    <div className="flex flex-wrap rounded-lg px-4 ">
+                    <div className="flex flex-wrap rounded-lg px-4 pb-4 ">
 
-                        <div className="relative w-full rounded-lg   h-[100vw] md:h-auto md:w-1/2   rounded-large  relative bg-gradient-to-b from-cyan-800 via-slate-950 to-slate-900 transform transition-transform duration-300 " >
+                        <div className=" w-full rounded-lg   h-[100vw] md:h-auto md:w-1/2   rounded-large  relative bg-gradient-to-b from-cyan-800 via-slate-950 to-slate-900 transform transition-transform duration-300 " >
                             <Image
                                 src="BlobActualFace.svg"
                                 alt="avatar image"
@@ -23,7 +23,7 @@ export default function Who() {
                             />
                         </div>  
 
-                        <div className="p-4 rounded-md md:w-1/2 flex flex-col bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 to-cyan-950 items-center justify-center text-base md:text-lg text-center md:text space-y-4 ">
+                        <div className="p-4 rounded-md md:w-1/2 flex flex-col bg-gradient-to-b from-slate-900 via-slate-950  to-cyan-950 items-center justify-center text-base md:text-lg text-center md:text space-y-4 ">
                             <CodeBrackets />
                             <p className="about-paragraph group  ">
                                 Hi, I'm{' '}
