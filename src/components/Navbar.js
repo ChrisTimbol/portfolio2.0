@@ -15,6 +15,7 @@ export default function Navbar() {
         setMenu(false);
     };
 
+    /* Disables scrolling when Hamburger menu */
     useLayoutEffect(() => {
         if (menu) {
             // Disable scrolling when the menu is open
@@ -32,14 +33,15 @@ export default function Navbar() {
 
     return (
         <>
-            <div className="relative z-30" onClick={toggleMenu}>
+            <div className="lg:hidden relative z-30" onClick={toggleMenu}>
                 <Hamburger closeMenu={menu} />
             </div>
             {menu && (
-                <div className='fixed bottom-0 left-0 w-full h-full z-10 bg-opacity-75 bg-slate-950 backdrop-blur text-white '>
-                    <nav className="w-full h-full relative text-6xl font-robotoSerif h-full  ">
+/*                 <nav className={`fixed bottom-0 left-0 w-full h-full z-10 bg-opacity-85 bg-slate-950 backdrop-blur text-slate-100 font-robotoSerif ${menu ? 'block' : 'hidden'}`}>
+ */
+                <nav className={`w-full h-full z-10  text-slate-100 font-robotoSerif `}>
 
-                        <div className=" fixed  h-3/4 w-1/4 left-0 bottom-0   flex flex-col  border-t-2 items-center border-slate-800 ">
+                    {/*                         <div className=" fixed  h-3/4 w-1/4 left-0 bottom-0   flex flex-col  border-t-2 items-center border-slate-800 ">
                             <Link
                                 className=" w-full  tems-center flex justify-center items-center h-full hover:border hover:border-slate-300"
                                 href="https://instagram.com/christimbol">
@@ -61,23 +63,57 @@ export default function Navbar() {
                                 href="mailto:christimbol707@gmail.com">
                                 <GmailMediaIcon />
                             </Link>
+                        </div> */}
+
+                    <ul className=' border-slate-800 flex justify-around border-t-2 border-l-2 '>
+                        <Link className="flex-grow" onClick={closeMenu} href="/">
+                            <li className='h-full text-4xl hover:border hover:border-slate-300 flex justify-center items-center w-full transition duration-300 ease-in-out hover:bg-slate-500 hover:bg-opacity-25'>
+                                Home
+                            </li>
+                        </Link>
+                        <Link className="flex-grow" onClick={closeMenu} href="/blog">
+                            <li className='h-full text-4xl hover:border hover:border-slate-300 flex justify-center items-center w-full transition duration-300 ease-in-out hover:bg-slate-500 hover:bg-opacity-25'>
+                                Blog
+                            </li>
+                        </Link>
+                        <Link className="flex-grow" onClick={closeMenu} href="/who">
+                            <li className='h-full text-4xl hover:border hover:border-slate-300 flex justify-center items-center w-full transition duration-300 ease-in-out hover:bg-slate-500 hover:bg-opacity-25'>
+                                Who
+                            </li>
+                        </Link>
+                        <Link className="flex-grow" onClick={closeMenu} href="/work">
+                            <li className='h-full text-4xl hover:border hover:border-slate-300 flex justify-center items-center w-full transition duration-300 ease-in-out hover:bg-slate-500 hover:bg-opacity-25'>
+                                Work
+                            </li>
+                        </Link>
+                    </ul>
+
+                </nav>
 
 
-                        </div>
-                        <ul className='fixed bottom-0 h-3/4 right-0 w-3/4 border-slate-800 flex flex-col justify-around border-t-2 border-l-2 '>
+            )
+            }
+        </>
+    );
+}
+
+
+
+
+/*                         <ul className='fixed bottom-0 h-3/4 right-0 w-3/4 border-slate-800 flex flex-col justify-around border-t-2 border-l-2 '>
                             <Link className="flex-grow" onClick={closeMenu} href="/">
                                 <li className='h-full text-4xl hover:border hover:border-slate-300 flex justify-center items-center w-full transition duration-300 ease-in-out hover:bg-slate-500 hover:bg-opacity-25'>
                                     Home
                                 </li>
                             </Link>
-                            <Link className="flex-grow" onClick={closeMenu} href="/who">
-                            <li className='h-full text-4xl hover:border hover:border-slate-300 flex justify-center items-center w-full transition duration-300 ease-in-out hover:bg-slate-500 hover:bg-opacity-25'>
-                                    Who
-                                </li>
-                            </Link>
                             <Link className="flex-grow" onClick={closeMenu} href="/blog">
                             <li className='h-full text-4xl hover:border hover:border-slate-300 flex justify-center items-center w-full transition duration-300 ease-in-out hover:bg-slate-500 hover:bg-opacity-25'>
                                     Blog
+                                </li>
+                            </Link>
+                            <Link className="flex-grow" onClick={closeMenu} href="/who">
+                            <li className='h-full text-4xl hover:border hover:border-slate-300 flex justify-center items-center w-full transition duration-300 ease-in-out hover:bg-slate-500 hover:bg-opacity-25'>
+                                    Who
                                 </li>
                             </Link>
                             <Link className="flex-grow" onClick={closeMenu} href="/work">
@@ -86,13 +122,4 @@ export default function Navbar() {
                                 </li>
                             </Link>
                         </ul>
-
-                    </nav>
-
-
-                </div >
-            )
-            }
-        </>
-    );
-}
+                         */

@@ -25,7 +25,7 @@ export default function Header() {
   }, [prevScrollPos]);
 
   return (
-    <header className={`px-4  items-center  lg:h-16 fixed top-0 z-50 flex justify-between  w-full ${isNavbarVisible ? '' : 'hidden'}`}>
+    <header className={`p-4  items-center  lg:h-16 fixed top-0 z-50 flex justify-between  w-full ${isNavbarVisible ? '' : 'hidden'}`}>
       <Link
         className="z-30 font-robotoSerif tracking-wide antialiased tracking-tighter transition-opacity duration-500 ease-in-out hover:opacity-75" href="/">
         <span className="font-semibold text-white text-xxxs  md:text-xl lg:text-2xl ">TIMBOL</span>

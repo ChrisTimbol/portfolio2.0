@@ -64,7 +64,7 @@ export const projects = [
         description: `Responsive e-commerce prototype using React, JavaScript, and Next.js. Dynamic URL generation, state management via Context API. Powered by a fake store API for product data.`,
 
 
-        thumbnail: '/projectImages/Netflix.png',
+        thumbnail: '/projectImages/ShoppingCart.png',
         github: `https://github.com/ChrisTimbol/shopper-cart`,
         website: `https://shopper-cart.vercel.app/`,
     },

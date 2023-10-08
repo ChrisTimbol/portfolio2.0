@@ -18,7 +18,7 @@ export default function Hamburger(props) {
 
     return (
         <>
-            <button className=" transition-opacity duration-500 ease-in-out hover:opacity-75 p-4  "  onClick={toggleOpen}>
+            <button className="transition-opacity duration-500 ease-in-out hover:opacity-75 p-4 "  onClick={toggleOpen}>
                 {isOpen ? (
                     <>
                         <div

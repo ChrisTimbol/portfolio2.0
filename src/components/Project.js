@@ -24,7 +24,7 @@ export default function Project({ title, description, github, website, thumbnail
                     </h2>
                 )}
                 {description && (
-                    <p className="font-roboto text-center text-slate-100 mb-4 leading-6">{description}</p>
+                    <p className="font-roboto text-center text-slate-100 p-4 leading-6">{description}</p>
                 )}
             </div>
 

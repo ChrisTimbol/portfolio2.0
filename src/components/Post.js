@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { FormatDate } from '@/components/FormatDate';
 
 
-const MAX_EXCERPT_WORDS = 44; // Maximum number of words for the excerpt
+const MAX_EXCERPT_WORDS = 30; // Maximum number of words for the excerpt
 
 function truncateText(text, maxWords) {
   const words = text.split(' ');
@@ -20,7 +20,7 @@ export default function Post({ date, excerpt, thumbnail, title, category, slug }
   const truncatedExcerpt = truncateText(excerpt, MAX_EXCERPT_WORDS);
 
   return (
-    <article className=" md:h-72 group cursor-pointer overflow-hidden mt-4 p-4 bg-slate-800 rounded-lg shadow-sm transition duration-300 hover:shadow-2xl">
+    <article className="sm:h-80  md:h-72 group cursor-pointer overflow-hidden mt-4 p-4 bg-slate-800 rounded-lg shadow-sm transition duration-300 hover:shadow-2xl">
       <Link href={`/blog/${slug}`}>
 
         <h2 className="group-hover:text-cyan-400 text-2xl text-slate-50 font-bold font-robotoSerif">

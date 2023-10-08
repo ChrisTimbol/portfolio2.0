@@ -1,9 +1,7 @@
 import React from 'react';
-
-import Link from 'next/link';
 export default function Sidebar(props) {
     return (
-        <aside className="text-slate-50  rounded-lg space-y-4" >
+        <aside className="text-slate-50  rounded-lg space-y-4 p-4" >
             <section className="" >
                 <h2 className="text-3xl mb-2">Top Categories</h2>
 
