@@ -26,18 +26,15 @@ export default function Sidebar(props) {
             </section>
 
             <section className="mb-4">
-                <h2 className="text-3xl mb-2">Best Categories</h2>
+                <h2 className="text-3xl mb-2">Top Articles</h2>
                 <ul className="  list-none text-base  font-roboto">
                     <li className="text-base leading-6 mb-2 font-medium font-robotoSerif">Should you learn tailwind?</li>
-
                     <li className="text-base leading-6 mb-2 font-medium font-robotoSerif">Post On A lion eating aasdasdsads tiger</li>
                     <li className="text-base leading-6 mb-2 font-medium font-robotoSerif">10 reasons why your a bad programmer</li>
                     <li className="text-base leading-6 mb-2 font-medium font-robotoSerif">Why you shouldn't do homework for your deads dog</li>
                     <li className="text-base leading-6 mb-2 font-medium font-robotoSerif">You got a problem then stoicism</li>
                     <li className="text-base leading-6 mb-2 font-medium font-robotoSerif">Sidebars are pointless do people even read this?</li>
                     <li className="text-base leading-6 mb-2 font-medium font-robotoSerif">Top 10 reasons programmers are crazy </li>
-
-
                 </ul>
 
                 {/*                     <ul>

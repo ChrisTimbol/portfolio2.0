@@ -13,10 +13,10 @@ export default async function Blog() {
 
     return (
         <>
-            <main className="flex justify-center  w-full h-full md:h-screen  bg-gradient-to-b from-slate-950 via-slate-950 to-slate-950 text-slate-50  ">
+            <main className="flex justify-center   w-full h-full md:h-screen  bg-gradient-to-b from-slate-950 via-slate-950 to-slate-950 text-slate-50  ">
 
-                <section className=" w-full h-full min-h-screen max-w-screen-lg flex flex-col items-center py-16 ">
-                    <h2 className="text-5xl  text-cyan-400 font-robotoSerif font-semibold py-16 px-4 border border-slate-700   w-full">Blog</h2>
+                <section className=" w-full md:min-h-screen h-full min-h-screen max-w-screen-xl flex flex-col items-center py-16 ">
+                    <h2 className="text-5xl  text-cyan-400 font-robotoSerif font-semibold py-16 px-4 border border-slate-700  w-full">Blog</h2>
 
                     <ul className="list-none w-full ">
                         {posts.map(post => (
