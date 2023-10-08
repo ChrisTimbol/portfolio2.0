@@ -1,11 +1,10 @@
 'use client';
 import React, { useState } from 'react';
 
-const Hamburger = ({ onClick }) => {
-    const [isOpen, setIsOpen] = useState(false);
+const Hamburger = ({ onClick, isOpen, setIsOpen }) => {
 
     const handleClick = () => {
-        setIsOpen(!isOpen);
+        setIsOpen(!isOpen); 
         onClick(); // Call the onClick function passed as a prop
     };
 
