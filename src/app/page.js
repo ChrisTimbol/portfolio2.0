@@ -17,7 +17,7 @@ export default async function Home() {
     <>
       <main className="flex justify-center bg-gradient-to-b w-full h-full from-slate-950 via-slate-900 to-slate-900 text-slate-50">
 
-        <section className="flex flex-wrap  w-full justify-center h-full  max-w-screen-xl   ">
+        <section className="flex flex-wrap  w-full justify-center h-full  max-w-screen-xl  pb-8 ">
         <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold p-4  w-full">Latest Post</h2>
 
           <div className="w-full lg:w-2/3 px-4 ">
