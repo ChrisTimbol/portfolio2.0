@@ -3,6 +3,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { Roboto, Roboto_Serif, Roboto_Mono, Style_Script } from 'next/font/google'
 import Gotopbutton from '@/components/Gotopbutton';
+import Hero from '@/components/Hero'
 
 const roboto = Roboto({
   weight: '400',
@@ -35,15 +36,16 @@ const roboto_Mono = Roboto_Mono({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${roboto.variable} ${stylescript.variable} ${roboto_Serif.variable} ${roboto_Mono.variable}`}>
-      <body className="font-roboto">
-
+      <body className="font-roboto  tracking-wider"   >              
         <Header />
-        <div className="py-16 bg-slate-800 text-white flex flex-col items-center justify-center">
-          <h1 className="text-5xl font-bold mb-4 text-center">Headline</h1>
-          <p className="text-xl text-center mb-8 max-w-md">Description</p>
+        <div className="flex justify-center Background bg-cover bg-cyan-900 h-72 bg-center w-full " style={{ backgroundImage: 'url(./wave.svg)' }}>
+        <Hero />
+
         </div>
+
         {children}
-        <Gotopbutton /> 
+
+        <Gotopbutton />
         <Footer />
       </body>
     </html>
