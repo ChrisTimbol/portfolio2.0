@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${roboto.variable} ${stylescript.variable} ${roboto_Serif.variable} ${roboto_Mono.variable}`}>
       <body className="font-roboto  tracking-wide"   >              
         <Header />
-        <div className="flex justify-center Background bg-cover bg-cyan-500 h-72 bg-center w-full " style={{ backgroundImage: 'url(./wave.svg)' }}>
+        <div className="flex justify-center Background bg-cover  h-96 bg-center w-full bg-cyan-600" style={{ backgroundImage: 'url(./wave.svg)' }}>
         <Hero />
 
         </div>
