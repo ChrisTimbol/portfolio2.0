@@ -26,7 +26,7 @@ export default function Who() {
                         <div className="p-4 rounded-md md:w-1/2 flex flex-col bg-gradient-to-b from-slate-900 via-slate-950  to-cyan-950 items-center justify-center text-base md:text-lg text-center md:text space-y-4 ">
                             <CodeBrackets />
                             <p className="about-paragraph group  ">
-                                Hi, I'm{' '}
+                                Hi, I&apos;m{' '}
                                 <span className="bg-gradient-to-r from-cyan-300 via-cyan-400 to-cyan-600 bg-clip-text text-transparent group-hover:brightness-110 group-hover:sepia group-hover:hue-rotate-45 transition-transform ">Chris Timbol</span>, a passionate web developer based in
                                 Sunny San Diego
                             </p>
@@ -41,7 +41,7 @@ export default function Who() {
                             </p>
                             <People />
                             <p className="about-paragraph">
-                                There's a profound sense of fulfillment in knowing that I can bring joy to someone through my creations,
+                                I fill so fulfilled knowing that I can bring joy to someone through my creations,
                                 adding my own touch to their digital experiences.
                             </p>
                             <RocketIcon />
