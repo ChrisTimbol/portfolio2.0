@@ -11,7 +11,7 @@ export default async function Home() {
 
   const timestamp = getTimestamp();
   const posts = await fetchData(`http://portfoliosite.local/wp-json/wp/v2/posts?_embed&timestamp=${timestamp}`, { next: { revalidate: false | 0 | 10 } })
-  const categories = await fetchData('http://portfoliosite.local/wp-json/wp/v2/categories', { next: { revalidate: false | 0 | 10 } })
+  const categories = await fetchData(`http://portfoliosite.local/wp-json/wp/v2/categories`, { next: { revalidate: false | 0 | 10 } })
 
   return (
     <>
@@ -26,7 +26,8 @@ export default async function Home() {
           </div>
 
           <div className="w-full lg:w-1/3 h-full p-4">
-            <Sidebar />
+
+            <Sidebar categories={categories} posts={posts}/>
           </div>
 
         </section>

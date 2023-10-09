@@ -7,12 +7,14 @@ function getTimestamp() {
 export async function generateStaticParams() {
   try {
     const postsResponse = await fetch('http://portfoliosite.local/wp-json/wp/v2/posts').then((res) => res.json())
-    const posts = postsResponse.map((post) => ({
+    const posts = postsResponse?.map((post) => ({
       slug: post.slug,
     }));
+
     return [...posts]
+
   } catch (error) {
-    console.error('Error fetching data:', error);
+    console.error('Error fetching post', error);
     throw error;
   }
 }
