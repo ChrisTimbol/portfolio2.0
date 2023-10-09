@@ -23,7 +23,7 @@ export default function Header() {
       <div className="max-w-screen-xl p-4  flex flex-col md:flex-row justify-center items-center w-full"> {/* max-w-screen */}
 
         <div className={` flex justify-between w-full items-center  `}>
-          <Link href="/" className="text-white font-robotoSerif text-xl md:text-2xl  hover:text-cyan-400 ">
+          <Link href="/" className="text-white font-robotoSerif text-xl md:text-2xl tracking-widest hover:text-cyan-400 ">
             TIMBOL<span className="text-xs md:text-sm">.DEV</span>
           </Link>
           <div className="md:hidden hover:text-cyan-400  ">
