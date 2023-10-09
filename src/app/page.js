@@ -10,8 +10,8 @@ export default async function Home() {
   }
 
   const timestamp = getTimestamp();
-  const posts = await fetchData(`http://portfoliosite.local/wp-json/wp/v2/posts?_embed&timestamp=${timestamp}`, { next: { revalidate: false | 0 | 10 } })
-  /*   const categories = await fetchData(`http://portfoliosite.local/wp-json/wp/v2/categories`, { next: { revalidate: false | 0 | 10 } })
+/*   const posts = await fetchData(`http://portfoliosite.local/wp-json/wp/v2/posts?_embed&timestamp=${timestamp}`, { next: { revalidate: false | 0 | 10 } })
+ */  /*   const categories = await fetchData(`http://portfoliosite.local/wp-json/wp/v2/categories`, { next: { revalidate: false | 0 | 10 } })
    */
   return (
     <>
@@ -21,12 +21,14 @@ export default async function Home() {
           <h2 className="text-5xl text-cyan-500 font-robotoSerif font-semibold p-4  w-full">Latest Post</h2>
 
           <div className="w-full lg:w-2/3 pl-4 ">
-            <PostLoop posts={posts} />
-          </div>
+            Post Loop
+{/*             <PostLoop posts={posts} />
+ */}          </div>
 
           <div className="w-full lg:w-1/3 h-full ">
-            <Sidebar posts={posts} />
-          </div>
+            Sidebar
+{/*             <Sidebar posts={posts} />
+ */}          </div>
 
         </section>
 
