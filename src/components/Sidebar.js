@@ -13,7 +13,7 @@ export default function Sidebar({ posts }) {
                             <span className="text-cyan-500">
                                 {'-> '}
                             </span>
-                            {post.title.rendered}
+                            {post.title.rendered} 
                         </Link>
                     </li>
                 ))}
