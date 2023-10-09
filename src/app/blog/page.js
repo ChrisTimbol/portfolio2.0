@@ -19,7 +19,7 @@ export default async function Blog() {
                     <ul className="list-none w-full ">
                         {posts.map(post => (
                             <li className="p-4 group cursor-pointer h-full w-full" key={post.id}>
-                                <Link href={post.slug} className=" ">
+                                <Link href={`/blog/${post.slug}`} className=" ">
                                     <h2 className="group-hover:text-cyan-300  text-xl text-slate-50 font-bold font-robotoSerif">
                                         {post.title.rendered || 'No Title'}
                                     </h2>
