@@ -18,6 +18,7 @@ export default function Who() {
                                 src="BlobActualFace.svg"
                                 alt="avatar image"
                                 fill
+                                priority
                                 sizes="(max-width: 640px) 50vw, (max-width: 768px) 80vw, 1200px"
                                 className="rounded-full "
                             />

@@ -29,14 +29,14 @@ export default async function Page({ params }) {
   return (
     <>
       <main className="flex justify-center items-center w-full h-full  bg-slate-950 text-slate-100  ">
-        <section className="flex h-full  flex-col md:flex-row justify-center    min-h-screen max-w-screen-md text-lg tracking-wider  p-4  ">
+        <section className="flex h-full  flex-col md:flex-row justify-center    min-h-screen max-w-screen-md   p-4  ">
 
           {postData.map((data) => (
             <div key={data?.id} className="w-full mb-8 border-b border-gray-300 pb-4">
               <h1 className="text-5xl md:text-5xl text-center text-slate-100  font-robotoSerif font-semibold py-6 w-full">
                 {data?.title?.rendered}
               </h1>
-              <div className="p-4 " dangerouslySetInnerHTML={{ __html: data?.content?.rendered }} />
+              <div className="p-4  " dangerouslySetInnerHTML={{ __html: data?.content?.rendered }} />
             </div>
           ))}
 
