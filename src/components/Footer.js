@@ -33,7 +33,7 @@ export default function Footer() {
                 </Link>
 
             </div>
-            <Link className="hover:text-teal-200 cursor-pointer text-sm  md:text-md " href="/privacy-policy">Privacy Policy</Link>
+        {/*     <Link className="hover:text-teal-200 cursor-pointer text-sm  md:text-md " >Privacy Policy</Link> */}
             <p className="text-sm pb-1 md:text-md ">Copyright © 2023. All rights reserved.</p>
 
         </footer>
