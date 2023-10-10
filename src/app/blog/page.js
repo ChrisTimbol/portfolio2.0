@@ -7,7 +7,7 @@ export default async function Blog() {
     }
 
     const timestamp = getTimestamp();
-    const posts = await fetchData(`http://portfoliosite.local/wp-json/wp/v2/posts?_embed&timestamp=${timestamp}`, {
+    const posts = await fetchData(`http://api.timbol.dev/wp-json/wp/v2/posts?_embed&timestamp=${timestamp}`, {
         next: { revalidate: false | 0 | 10 }
     });
 
@@ -18,7 +18,7 @@ export default async function Blog() {
                     <h2 className="text-5xl  text-cyan-400 font-robotoSerif font-semibold  p-4   w-full">Blog</h2>
                     <ul className="list-none w-full ">
                             Post map blog
-{/*                         {posts.map(post => (
+                        {posts.map(post => (
                             <li className="p-4 group cursor-pointer h-full w-full" key={post.id}>
                                 <Link href={`/blog/${post.slug}`} className=" ">
                                     <h2 className="group-hover:text-cyan-300  text-xl text-slate-50 font-bold font-robotoSerif">
@@ -28,7 +28,7 @@ export default async function Blog() {
                                 </Link>
                             </li>
                         ))} 
-    */}
+   
                     </ul>
                 </section>
             </main>

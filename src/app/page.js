@@ -10,8 +10,8 @@ export default async function Home() {
   }
 
   const timestamp = getTimestamp();
-/*   const posts = await fetchData(`http://portfoliosite.local/wp-json/wp/v2/posts?_embed&timestamp=${timestamp}`, { next: { revalidate: false | 0 | 10 } })
- */  /*   const categories = await fetchData(`http://portfoliosite.local/wp-json/wp/v2/categories`, { next: { revalidate: false | 0 | 10 } })
+/*   const posts = await fetchData(`http://api.timbol.dev/wp-json/wp/v2/posts?_embed&timestamp=${timestamp}`, { next: { revalidate: false | 0 | 10 } })
+ */  /*   const categories = await fetchData(`http://api.timbol.dev/wp-json/wp/v2/categories`, { next: { revalidate: false | 0 | 10 } })
    */
   return (
     <>
