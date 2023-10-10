@@ -2,13 +2,13 @@
 import Image from 'next/image';
 import { RocketIcon, MagicWand, CodeBrackets, People, ThumbsUp } from '@/components/Icons';
 import Link from 'next/link'
-export default function Who() {
+export default function About() {
     return (
         <>
             <main className="flex justify-center  w-full h-full  bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-slate-50   ">
 
                 <section className=" w-full h-full md:min-h-screen  max-w-screen-xl flex flex-col items-center ">
-                    <h2 className="text-5xl text-cyan-400 font-robotoSerif font-semibold p-4  w-full ">Who I Am</h2>
+                    <h2 className="text-5xl text-slate-200 font-robotoSerif font-semibold p-4  w-full ">About me</h2>
 
 
                     <div className="flex flex-wrap rounded-lg p-4 ">

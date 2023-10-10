@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Project({ title, description, github, website, thumbnail }) {
     return (
-        <div className="border border-cyan-700 w-full h-full bg-slate-950 rounded-lg shadow-sm shadow-slate-900 transition duration-300 group hover:shadow-2xl relative flex flex-col">
+        <div className=" w-full h-full bg-slate-800 rounded-lg shadow-sm shadow-slate-900 transition duration-300 group hover:shadow-2xl relative flex flex-col">
             <div className="h-60 w-full relative">
                 {thumbnail && (
                     <Image

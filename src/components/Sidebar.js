@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Sidebar({ posts }) {
     return (
         <aside className="text-slate-200 rounded-lg p-4" >
-            <h2 className="text-2xl text-cyan-400">Additional Post</h2>
+            <h2 className="text-2xl tracking-wide text-slate-200">Additional Post</h2>
             <ul className="min-h-screen list-none rounded-lg  font-roboto  ">
                 {posts?.map((post) => (
                     <li

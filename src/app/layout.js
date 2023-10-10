@@ -36,9 +36,9 @@ const roboto_Mono = Roboto_Mono({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${roboto.variable} ${stylescript.variable} ${roboto_Serif.variable} ${roboto_Mono.variable}`}>
-      <body className="font-roboto tracking-wide"   >              
+      <body className="font-roboto"   >              
         <Header />
-        <div className="flex justify-center Background bg-cover  h-96 bg-center w-full bg-cyan-600" style={{ backgroundImage: 'url(./wave.svg)' }}>
+        <div className="flex justify-center Background bg-cover  h-96 bg-center w-full bg-slate-900" style={{ backgroundImage: 'url(./wave.svg)' }}>
         <Hero />
 
         </div>
