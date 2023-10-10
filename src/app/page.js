@@ -20,7 +20,7 @@ export default async function Home() {
         <section className="flex flex-wrap  w-full justify-center h-full  max-w-screen-xl  pb-8 ">
           <h2 className="text-5xl text-cyan-500 font-robotoSerif font-semibold p-4  w-full">Latest Post</h2>
 
-          <div className="w-full lg:w-2/3 p-4 ">
+          <div className="w-full lg:w-2/3 px-4 ">
             <PostLoop posts={posts} />
           </div>
 
