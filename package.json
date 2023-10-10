@@ -13,6 +13,7 @@
     "@heroicons/react": "^2.0.18",
     "@react-three/drei": "^9.86.3",
     "@react-three/fiber": "^8.14.4",
+    "@vercel/analytics": "^1.1.0",
     "autoprefixer": "10.4.15",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",

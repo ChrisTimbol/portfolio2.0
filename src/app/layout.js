@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import { Roboto, Roboto_Serif, Roboto_Mono, Style_Script } from 'next/font/google'
 import Gotopbutton from '@/components/Gotopbutton';
 import Hero from '@/components/Hero'
+import { Analytics } from '@vercel/analytics/react';
 
 const roboto = Roboto({
   weight: '400',
@@ -47,6 +48,7 @@ export default function RootLayout({ children }) {
 
         <Gotopbutton />
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
