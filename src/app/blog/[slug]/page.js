@@ -28,8 +28,8 @@ export default async function Page({ params }) {
 
   return (
     <>
-      <main className="flex justify-center items-center w-full h-full  bg-gradient-to-b from-slate-950 via-slate-900 to-slate-900 text-slate-50  ">
-        <section className="flex h-full  flex-col md:flex-row justify-center  leading-7 min-h-screen max-w-screen-lg   p-4  ">
+      <main className="flex justify-center items-center w-full h-full  bg-slate-950 text-slate-100  ">
+        <section className="flex h-full  flex-col md:flex-row justify-center    min-h-screen max-w-screen-md text-lg tracking-wider  p-4  ">
 
           {postData.map((data) => (
             <div key={data?.id} className="w-full mb-8 border-b border-gray-300 pb-4">
@@ -41,7 +41,7 @@ export default async function Page({ params }) {
           ))}
 
         {/*   <Sidebar />  */}
-         
+         {/* Table of contents */}
         </section>
       </main>
     </>
