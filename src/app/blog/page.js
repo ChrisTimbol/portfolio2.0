@@ -17,7 +17,7 @@ export default async function Blog() {
                 <section className=" w-full md:min-h-screen h-full min-h-screen max-w-screen-xl ">
                     <h2 className="text-5xl  text-cyan-400 font-robotoSerif font-semibold  p-4   w-full">Blog</h2>
                     <ul className="list-none w-full ">
-                            Post map blog
+                       
                         {posts.map(post => (
                             <li className="p-4 group cursor-pointer h-full w-full" key={post.id}>
                                 <Link href={`/blog/${post.slug}`} className=" ">
