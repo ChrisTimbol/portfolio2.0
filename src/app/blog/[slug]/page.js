@@ -36,7 +36,7 @@ export default async function Page({ params }) {
               <h1 className="text-5xl md:text-5xl text-center text-slate-200  font-robotoSerif font-semibold py-6 w-full">
                 {data?.title?.rendered}
               </h1>
-              <div className="p-4  " dangerouslySetInnerHTML={{ __html: data?.content?.rendered }} />
+              <div className="  " dangerouslySetInnerHTML={{ __html: data?.content?.rendered }} />
             </div>
           ))}
 
