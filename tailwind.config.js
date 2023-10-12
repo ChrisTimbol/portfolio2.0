@@ -12,6 +12,10 @@ module.exports = {
         'xxs': '14px',
         'xxxs': '12px',
         'xxxxs': '8px',
+        'small': 'var(--has-small-font-size)',
+        'medium': 'var(--has-medium-font-size)',
+        'large': 'var(--has-large-font-size)',
+        'x-large': 'var(--has-x-large-font-size)',
       },
       fontFamily: {
         roboto: ['var(--font-roboto)'],
@@ -22,5 +26,7 @@ module.exports = {
       
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

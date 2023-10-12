@@ -3,26 +3,23 @@
 @tailwind utilities;
 
 /* styles.css or your preferred stylesheet */
-.slash-effect {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-}
+/* Custom Font Size Classes */
+.has-x-small-font-size{
+    @apply text-sm;
+  }
+  
+  .has-small-font-size{
+    @apply text-base;
+  }
+  
+  .has-medium-font-size{
+    @apply text-xl;
+  }
+  
+  .has-large-font-size{
+    @apply text-3xl;
+  }
 
-.slash-effect::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 2px;
-    background-color: red;
-    transform: translateX(-50%);
-    animation: slash-animation 0.5s ease forwards;
-}
-
-@keyframes slash-animation {
-    to {
-        transform: translate(-50%, -50%) scaleX(2);
-    }
-}
+  .has-x-large-font-size{
+    @apply text-5xl;
+  }
