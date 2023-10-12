@@ -8,9 +8,9 @@ export default function Sidebar({ posts }) {
                 {posts?.map((post) => (
                     <li
                         key={post.id}
-                        className="hover:text-cyan-500 font-robotoSerif cursor-pointer w-full p-4">
+                        className="hover:text-cyan-500 font-robotoSerif cursor-pointer w-full ">
                         <Link href={`/blog/${post.slug}`}>
-                            <span className="text-cyan-400">
+                            <span className="text-cyan-400 pr-2">
                                 {'->  '}
                             </span>
                             {post.title.rendered} 
