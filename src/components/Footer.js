@@ -34,6 +34,7 @@ export default function Footer() {
 
             </div>
         {/*     <Link className="hover:text-teal-200 cursor-pointer text-sm  md:text-md " >Privacy Policy</Link> */}
+        <p className="text-sm pb-1 text-stone-500 md:text-md "> site fetches post headlessly </p>
             <p className="text-sm pb-1 md:text-md ">Copyright © 2023. All rights reserved.</p>
 
         </footer>

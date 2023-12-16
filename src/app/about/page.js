@@ -33,7 +33,7 @@ export default function About() {
                             </p>
                             <ThumbsUp />
                             <p className="about-paragraph">
-                                I find joy in front-end development, the artful blend of functional logic in code, bringing designs to life,
+                                I find joy in programming the artful blend of functional logic in code, bringing designs to life,
                                 and creating something unique in this world.
                             </p>
                             <MagicWand />
@@ -50,6 +50,9 @@ export default function About() {
                                 I excel in <span className="text-gradient">React and Tailwind</span>, ensuring fast and elegant web
                                 solutions. My expertise extends to creating custom WordPress themes and plugins, delivering pixel-perfect
                                 designs and intuitive interfaces.
+                            </p>
+                            <p>
+                            Recently I have picked up learning Unreal Engine Fortnite. A new program launched early 2023 that uses a new coding language called Verse, it's really interesting.
                             </p>
                         </div>
                     </div>

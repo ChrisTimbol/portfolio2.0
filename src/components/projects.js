@@ -1,12 +1,29 @@
 export const projects = [
     {
-        title: `Lost Ark Skill Builder`,
-        description: `Craft personalized Lost Ark skill builds anytime, anywhere. 
-                    Utilize an in-game replicated Skill Tree for ultimate 
-                    customization, all outside the game.`,
-        thumbnail: '/projectImages/LostArkCalculator.png',
-        github: `https://github.com/ChrisTimbol/ArkTreeCalc`,
-        website: `https://ark-tree-calc.vercel.app/`,
+        title: `Reality Root`,
+        description: `A Stoic philosopher blog I have created with zero code, all created using Wordpresses 2023 theme! This project truly shows the power of wordpress gutenberg block themes.`,
+        thumbnail: '/projectImages/RealityBlog.png',
+        github: ``,
+        website: `https://realityroot.com/`,
+    },
+    {
+        title: `Netflix Clone: 
+        Movie Catalog Web App`,
+        description: `Built with NextJS, TailwindCSS, and MovieDB API. Users can view and like movies, adding them to favorites. Focus on authentication, navigation, and responsive design.`,
+
+
+        thumbnail: '/projectImages/Netflix.png',
+        github: `https://github.com/ChrisTimbol/NetflixClone`,
+        website: `https://chrisnetflixclone.vercel.app/`,
+    },
+    {
+        title: `Shopper Cart`,
+        description: `Responsive e-commerce prototype using React, JavaScript, and Next.js. Dynamic URL generation, state management via Context API. Powered by a fake store API for product data.`,
+
+
+        thumbnail: '/projectImages/ShoppingCart.png',
+        github: `https://github.com/ChrisTimbol/shopper-cart`,
+        website: `https://shopper-cart.vercel.app/`,
     },
     {
         title: `Cocktail Mixer:
@@ -38,7 +55,7 @@ export const projects = [
         and delivers it in JSON format for an unparalleled user experience.`,
         thumbnail: `/projectImages/sneaker.jpg`,
         github: `https://github.com/ChrisTimbol/SneakerAPI`,
-        website: `https://github.com/ChrisTimbol/SneakerAPI`,
+        website: ``,
     },
     {
         title: `Lost Ark Skill Builder`,
@@ -49,23 +66,6 @@ export const projects = [
         github: `https://github.com/ChrisTimbol/ArkTreeCalc`,
         website: `https://ark-tree-calc.vercel.app/`,
     },
-    {
-        title: `Netflix Clone: 
-        Movie Catalog Web App`,
-        description: `Built with NextJS, TailwindCSS, and MovieDB API. Users can view and like movies, adding them to favorites. Focus on authentication, navigation, and responsive design.`,
 
 
-        thumbnail: '/projectImages/Netflix.png',
-        github: `https://github.com/ChrisTimbol/NetflixClone`,
-        website: `https://chrisnetflixclone.vercel.app/`,
-    },
-    {
-        title: `Shopper Cart`,
-        description: `Responsive e-commerce prototype using React, JavaScript, and Next.js. Dynamic URL generation, state management via Context API. Powered by a fake store API for product data.`,
-
-
-        thumbnail: '/projectImages/ShoppingCart.png',
-        github: `https://github.com/ChrisTimbol/shopper-cart`,
-        website: `https://shopper-cart.vercel.app/`,
-    },
 ];
