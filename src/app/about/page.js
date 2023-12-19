@@ -52,7 +52,7 @@ export default function About() {
                                 designs and intuitive interfaces.
                             </p>
                             <p>
-                            Recently I have picked up learning Unreal Engine Fortnite. A new program launched early 2023 that uses a new coding language called Verse, it's really interesting.
+                            Recently I have picked up learning Unreal Engine Fortnite. A new program launched early 2023 that uses a new coding language called Verse, it&apos;s been really fun.
                             </p>
                         </div>
                     </div>
