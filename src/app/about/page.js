@@ -58,7 +58,7 @@ export default function About() {
                     </div>
                     {/*                     <div className="flex justify-center w-full py-16 ">
                         <Link
-                            href="/work"
+                            href="/work"d
                             className="flex justify-center 
                     bg-cyan-700 hover:bg-cyan-400 
                     text-white text-sm font-bold  px-2 py-3 w-1/2 
